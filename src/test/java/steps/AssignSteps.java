@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import utils.CommonMethods;
 import utils.ConfigReader;
+import utils.Log;
 
 import java.util.List;
 
@@ -35,7 +36,7 @@ public class AssignSteps extends CommonMethods {
 
     @When("user enters the name of employee,leave reason,dates and comments")
     public void user_enters_the_name_of_employee_leave_reason_dates_and_comments() throws InterruptedException {
-        sendText("Tom Smith", assignPage.employeeName);
+        sendText("Mike Tyson", assignPage.employeeName);
         selectFromDropDown(assignPage.leaveType, "Personal Time");
         jsClick(assignPage.fromDate);
         Thread.sleep(2000);
@@ -74,6 +75,8 @@ public class AssignSteps extends CommonMethods {
     public void user_should_see_a_successfully_assingned_message() {
         WebElement message = getWait().until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(),'Successfully Assigned')]")));
         Assert.assertTrue(message.isDisplayed());
+        System.out.println("good ");
+        Log.endTestCase("ends here");
     }
 
 }
