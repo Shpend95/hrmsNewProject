@@ -5,7 +5,7 @@ Feature: Modifying leaves
     When user cliks on leave button
 
 
-    @newAssign
+    @newAssign @smoke
     Scenario:Assigning for leave
       When user clicks on assign leave button
       And user enters the name of employee,leave reason,dates and comments

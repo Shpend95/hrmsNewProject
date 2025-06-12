@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utils.CommonMethods;
+import utils.Log;
 
 public class EmployeeSearchSteps extends CommonMethods {
 
@@ -33,7 +34,9 @@ public class EmployeeSearchSteps extends CommonMethods {
 
     @When("user enter valid employee name")
     public void user_enter_valid_employee_name() {
-        sendText("Lamar", employeeSearchPage.empNameSearchField);
+        sendText("Sam", employeeSearchPage.empNameSearchField);
+
+        Log.info("searching for employee by name");
     }
 
 

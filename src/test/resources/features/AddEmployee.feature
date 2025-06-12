@@ -21,7 +21,7 @@ Feature: Adding employees using different techniques
     And user clicks on save button
     Then employee added successfully
 
-  @DataDrivenTesting
+  @DataDrivenTesting @smoke
   Scenario Outline: Adding employees using data driven testing
     When user enters "<firstname>" and "<middlename>" and "<lastname>"
     And user clicks on save button
@@ -29,7 +29,7 @@ Feature: Adding employees using different techniques
     Examples:
       | firstname | middlename | lastname |
       | Mike      | Tyson      | Junior   |
-      | Sam       | MS         | JR       |
+      | Sam       | Tiko         | JR       |
       | Matt      | LS         | Sr       |
       | Paul      | PP         | Sr       |
       | Lionel    | MS         | BS       |

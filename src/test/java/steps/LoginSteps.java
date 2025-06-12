@@ -16,7 +16,7 @@ public class LoginSteps extends CommonMethods {
 
     @Given("user is navigated to HRMS application")
     public void user_is_navigated_to_hrms_application() {
-        Log.startTestCase("Login Test Case");
+        Log.startTestCase("Login Test Case START");
         launchBrowser();
         Log.info("Browser launched and navigated to HRMS application");
 

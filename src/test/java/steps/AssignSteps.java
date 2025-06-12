@@ -37,7 +37,7 @@ public class AssignSteps extends CommonMethods {
 
     @When("user enters the name of employee,leave reason,dates and comments")
     public void user_enters_the_name_of_employee_leave_reason_dates_and_comments() throws InterruptedException {
-        sendText("Measa Tumb", assignPage.employeeName);
+        sendText("Sam Tiko", assignPage.employeeName);
         selectFromDropDown(assignPage.leaveType, "Personal Time");
         jsClick(assignPage.fromDate);
         Thread.sleep(2000);
