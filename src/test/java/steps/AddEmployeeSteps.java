@@ -75,6 +75,8 @@ public class AddEmployeeSteps extends CommonMethods {
             click(dashboardPage.addEmployeeOption);
             Thread.sleep(2000);
         }
+        System.out.println("to delete later this ");
+
     }
 
     @When("user adds multiple employees from excel and validates them")
