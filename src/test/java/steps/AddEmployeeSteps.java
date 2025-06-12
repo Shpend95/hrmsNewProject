@@ -7,6 +7,7 @@ import utils.CommonMethods;
 import utils.ExcelReader;
 import utils.Log;
 
+import javax.swing.plaf.synth.SynthOptionPaneUI;
 import java.util.List;
 import java.util.Map;
 
@@ -51,6 +52,7 @@ public class AddEmployeeSteps extends CommonMethods {
         sendText(fN, addEmployeePage.firstName);
         sendText(mN, addEmployeePage.middleName);
         sendText(lN, addEmployeePage.lastName);
+        System.out.println("to be deleted later");
 
     }
 

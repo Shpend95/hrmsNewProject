@@ -5,6 +5,7 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import utils.CommonMethods;
 import utils.Log;
 
@@ -29,14 +30,15 @@ public class EmployeeSearchSteps extends CommonMethods{
     public void user_is_able_to_see_the_employee_information() {
         WebElement listOfEmp = driver.findElement(By.xpath("//div[@id='tableWrapper']/table/tbody"));
         //Assert.assertTrue(listOfEmp.getText().contains("111345A"));
-        Assert.assertTrue(listOfEmp.getText().contains("shpend kosova pllana"));
+        Assert.assertTrue(listOfEmp.getText().contains("shpend kosova pllana1"));
 
 
     }
 
     @When("user enter valid employee name")
-    public void user_enter_valid_employee_name() {
-        sendText("shpend kosova pllana", employeeSearchPage.empNameSearchField);
+    public void user_enter_valid_employee_name() throws InterruptedException {
+        Thread.sleep(3000);
+        sendText("shpend kosova pllana1", employeeSearchPage.empNameSearchField);
 
     }
 

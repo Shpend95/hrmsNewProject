@@ -14,7 +14,7 @@ Feature: Employee search related scenarios
     And user clicks on search button
     Then user is able to see the employee information
 
-  @regression @smoke
+  @regression @smoke @name
   Scenario: Search employee by name
     When user enter valid employee name
     And user clicks on search button
