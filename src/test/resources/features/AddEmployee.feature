@@ -15,13 +15,13 @@ Feature: Adding employees using different techniques
     And user clicks on save button
     Then employee added successfully
 
-  @valuesFromFF
+  @valuesFromFF @smoke
   Scenario: Adding employee from feature file
-    When user enter "Sam" ,"MS" and "Syntax"
+    When user enter "shpend" ,"kosova" and "pllana"
     And user clicks on save button
     Then employee added successfully
 
-  @DataDrivenTesting @smoke
+  @DataDrivenTesting
   Scenario Outline: Adding employees using data driven testing
     When user enters "<firstname>" and "<middlename>" and "<lastname>"
     And user clicks on save button

@@ -42,6 +42,7 @@ public class AddEmployeeSteps extends CommonMethods {
         sendText(lastName, addEmployeePage.lastName);
 
 
+
     }
 
 
@@ -115,8 +116,6 @@ public class AddEmployeeSteps extends CommonMethods {
 
 
     }
-
-
 
 
 }

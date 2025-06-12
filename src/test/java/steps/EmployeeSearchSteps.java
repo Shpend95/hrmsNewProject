@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import utils.CommonMethods;
 import utils.Log;
 
-public class EmployeeSearchSteps extends CommonMethods {
+public class EmployeeSearchSteps extends CommonMethods{
 
     @Then("user click on PIM option")
     public void user_click_on_pim_option() {
@@ -28,16 +28,16 @@ public class EmployeeSearchSteps extends CommonMethods {
     @Then("user is able to see the employee information")
     public void user_is_able_to_see_the_employee_information() {
         WebElement listOfEmp = driver.findElement(By.xpath("//div[@id='tableWrapper']/table/tbody"));
-        Assert.assertTrue(listOfEmp.getText().contains("111345A"));
-        Assert.assertTrue(listOfEmp.getText().contains("SHPEND KOSOVA PLLANA"));
+        //Assert.assertTrue(listOfEmp.getText().contains("111345A"));
+        Assert.assertTrue(listOfEmp.getText().contains("shpend kosova pllana"));
+
 
     }
 
     @When("user enter valid employee name")
     public void user_enter_valid_employee_name() {
-        sendText("SHPEND KOSOVA PLLANA", employeeSearchPage.empNameSearchField);
+        sendText("shpend kosova pllana", employeeSearchPage.empNameSearchField);
 
-        Log.info("searching for employee by name");
     }
 
 

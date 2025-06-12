@@ -38,7 +38,7 @@ public class NationalitySteps extends CommonMethods {
     public void user_enters_the_name_of_nationality() {
         jsClick(nationalityPage.addBtn);
         getWait();
-        sendText("DARDANIA", nationalityPage.nationalityName);
+        sendText("illiria", nationalityPage.nationalityName);
 
     }
 
@@ -56,7 +56,6 @@ public class NationalitySteps extends CommonMethods {
 
 
         Assert.assertTrue(message.getText().contains("Successfully Saved"));
-        Log.endTestCase("this is the end");
         Log.warn("might not see success message");
         Log.info("finger crossed, we passing ");
 
