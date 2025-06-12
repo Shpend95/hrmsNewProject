@@ -76,6 +76,7 @@ public class AddEmployeeSteps extends CommonMethods {
             Thread.sleep(2000);
         }
         System.out.println("to delete later this ");
+        System.out.println("same ");
 
     }
 
