@@ -5,6 +5,7 @@ import io.cucumber.java.en.When;
 import org.hamcrest.core.CombinableMatcher;
 import utils.CommonMethods;
 import utils.ExcelReader;
+import utils.Log;
 
 import java.util.List;
 import java.util.Map;
@@ -77,6 +78,7 @@ public class AddEmployeeSteps extends CommonMethods {
         }
         System.out.println("to delete later this ");
         System.out.println("same ");
+        System.out.println("here also");
 
     }
 
@@ -110,8 +112,10 @@ public class AddEmployeeSteps extends CommonMethods {
 
         }
         System.out.println("great");
+        Log.warn("maybe fail");
 
     }
+
 
 
 
