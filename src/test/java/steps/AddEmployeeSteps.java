@@ -112,7 +112,7 @@ public class AddEmployeeSteps extends CommonMethods {
 
         }
         System.out.println("great");
-        Log.warn("maybe fail");
+
 
     }
 

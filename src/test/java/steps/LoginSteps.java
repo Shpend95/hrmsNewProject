@@ -16,9 +16,8 @@ public class LoginSteps extends CommonMethods {
 
     @Given("user is navigated to HRMS application")
     public void user_is_navigated_to_hrms_application() {
-        Log.startTestCase("Login Test Case START");
         launchBrowser();
-        Log.info("Browser launched and navigated to HRMS application");
+        Log.startTestCase("here is the beggining of test case");
 
     }
 
@@ -37,7 +36,8 @@ public class LoginSteps extends CommonMethods {
     @Then("user is successfully logged in")
     public void user_is_successfully_logged_in() throws IOException {
         Assert.assertTrue(dashboardPage.welcomeMessage.isDisplayed());
-        System.out.println("Logged in successfully ");
+
+        Log.endTestCase("first test case is done here");
 
 
     }

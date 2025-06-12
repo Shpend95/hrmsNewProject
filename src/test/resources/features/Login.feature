@@ -7,7 +7,7 @@ Feature: Login related scenarios
     And user cicks on login button
     Then user is successfully logged in
 
-    @featureFileLogin
+    @featureFileLogin @smoke
     Scenario: Valid admin login from feature file
       When user enters "admin" value and "Hum@nhrm123" value
       And user clicks on login button

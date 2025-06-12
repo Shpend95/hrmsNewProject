@@ -17,7 +17,7 @@ public class EmployeeSearchSteps extends CommonMethods {
 
     @When("user enter valid employee id")
     public void user_enter_valid_employee_id() {
-        employeeSearchPage.idField.sendKeys("118696A");
+        employeeSearchPage.idField.sendKeys("111345A");
     }
 
     @When("user clicks on search button")
@@ -28,13 +28,14 @@ public class EmployeeSearchSteps extends CommonMethods {
     @Then("user is able to see the employee information")
     public void user_is_able_to_see_the_employee_information() {
         WebElement listOfEmp = driver.findElement(By.xpath("//div[@id='tableWrapper']/table/tbody"));
-        Assert.assertTrue(listOfEmp.getText().contains("118696A"));
+        Assert.assertTrue(listOfEmp.getText().contains("111345A"));
+        Assert.assertTrue(listOfEmp.getText().contains("SHPEND KOSOVA PLLANA"));
 
     }
 
     @When("user enter valid employee name")
     public void user_enter_valid_employee_name() {
-        sendText("Sam", employeeSearchPage.empNameSearchField);
+        sendText("SHPEND KOSOVA PLLANA", employeeSearchPage.empNameSearchField);
 
         Log.info("searching for employee by name");
     }

@@ -8,7 +8,7 @@ Feature: Employee search related scenarios
     When user click on PIM option
 
 
-  @regression
+  @regression @smoke
   Scenario: Search employee by id
     When user enter valid employee id
     And user clicks on search button

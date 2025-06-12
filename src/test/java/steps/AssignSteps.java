@@ -18,7 +18,7 @@ public class AssignSteps extends CommonMethods {
 
     @Given("user is logged in and on dashboard page")
     public void user_is_logged_in_and_on_dashboard_page() throws InterruptedException {
-        Log.startTestCase("here we goooo");
+        Log.startTestCase("here we goooo, this is assign steps");
         loginPage.usernameField.sendKeys(ConfigReader.read("userName"));
         loginPage.passwordField.sendKeys(ConfigReader.read("passWord"));
         jsClick(loginPage.loginBtn);
@@ -37,7 +37,7 @@ public class AssignSteps extends CommonMethods {
 
     @When("user enters the name of employee,leave reason,dates and comments")
     public void user_enters_the_name_of_employee_leave_reason_dates_and_comments() throws InterruptedException {
-        sendText("Sam Tiko", assignPage.employeeName);
+        sendText("SHPEND KOSOVA PLLANA", assignPage.employeeName);
         selectFromDropDown(assignPage.leaveType, "Personal Time");
         jsClick(assignPage.fromDate);
         Thread.sleep(2000);
@@ -77,7 +77,7 @@ public class AssignSteps extends CommonMethods {
         WebElement message = getWait().until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(),'Successfully Assigned')]")));
         Assert.assertTrue(message.isDisplayed());
         System.out.println("good ");
-        Log.endTestCase("ends here");
+
     }
 
 }

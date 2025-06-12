@@ -22,7 +22,7 @@ public class NationalitySteps extends CommonMethods {
         loginPage.passwordField.sendKeys(ConfigReader.read("passWord"));
         jsClick(loginPage.loginBtn);
         jsClick(dashboardPage.adminBtn);
-        Log.startTestCase("beggining of nationalitysteps");
+
 
     }
 
@@ -38,7 +38,7 @@ public class NationalitySteps extends CommonMethods {
     public void user_enters_the_name_of_nationality() {
         jsClick(nationalityPage.addBtn);
         getWait();
-        sendText("REPUBLIC OF DARDANIA", nationalityPage.nationalityName);
+        sendText("DARDANIA", nationalityPage.nationalityName);
 
     }
 
@@ -56,8 +56,11 @@ public class NationalitySteps extends CommonMethods {
 
 
         Assert.assertTrue(message.getText().contains("Successfully Saved"));
+        Log.endTestCase("this is the end");
         Log.warn("might not see success message");
-        Log.endTestCase("here is the end...and boom ");
+        Log.info("finger crossed, we passing ");
+
+
     }
 
     @When("user enters the name of existing nationality")
