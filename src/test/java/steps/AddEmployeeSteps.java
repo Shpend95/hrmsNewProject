@@ -53,6 +53,7 @@ public class AddEmployeeSteps extends CommonMethods {
         sendText(mN, addEmployeePage.middleName);
         sendText(lN, addEmployeePage.lastName);
         System.out.println("to be deleted later");
+        System.out.println("same ");
 
     }
 
