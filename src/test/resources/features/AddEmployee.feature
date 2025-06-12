@@ -17,7 +17,7 @@ Feature: Adding employees using different techniques
 
   @valuesFromFF @smoke
   Scenario: Adding employee from feature file
-    When user enter "shpend" ,"kosova" and "pllana1"
+    When user enter "shpend" ,"kosova" and "pllana"
     And user clicks on save button
     Then employee added successfully
 

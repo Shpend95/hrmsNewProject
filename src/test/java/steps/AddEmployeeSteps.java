@@ -42,8 +42,6 @@ public class AddEmployeeSteps extends CommonMethods {
         sendText(middleName, addEmployeePage.middleName);
         sendText(lastName, addEmployeePage.lastName);
 
-
-
     }
 
 
@@ -52,8 +50,7 @@ public class AddEmployeeSteps extends CommonMethods {
         sendText(fN, addEmployeePage.firstName);
         sendText(mN, addEmployeePage.middleName);
         sendText(lN, addEmployeePage.lastName);
-        System.out.println("to be deleted later");
-        System.out.println("same ");
+
 
     }
 
@@ -80,9 +77,7 @@ public class AddEmployeeSteps extends CommonMethods {
             click(dashboardPage.addEmployeeOption);
             Thread.sleep(2000);
         }
-        System.out.println("to delete later this ");
-        System.out.println("same ");
-        System.out.println("here also");
+
 
     }
 

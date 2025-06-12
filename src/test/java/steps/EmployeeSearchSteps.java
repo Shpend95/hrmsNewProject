@@ -30,7 +30,7 @@ public class EmployeeSearchSteps extends CommonMethods{
     public void user_is_able_to_see_the_employee_information() {
         WebElement listOfEmp = driver.findElement(By.xpath("//div[@id='tableWrapper']/table/tbody"));
         //Assert.assertTrue(listOfEmp.getText().contains("111345A"));
-        Assert.assertTrue(listOfEmp.getText().contains("shpend kosova pllana1"));
+        Assert.assertTrue(listOfEmp.getText().contains("shpend kosova pllana"));
 
 
     }
@@ -38,7 +38,8 @@ public class EmployeeSearchSteps extends CommonMethods{
     @When("user enter valid employee name")
     public void user_enter_valid_employee_name() throws InterruptedException {
         Thread.sleep(3000);
-        sendText("shpend kosova pllana1", employeeSearchPage.empNameSearchField);
+        getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("empsearch_employee_name_empName")));
+        sendText("shpend kosova pllana", employeeSearchPage.empNameSearchField);
 
     }
 

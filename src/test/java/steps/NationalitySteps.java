@@ -38,7 +38,7 @@ public class NationalitySteps extends CommonMethods {
     public void user_enters_the_name_of_nationality() {
         jsClick(nationalityPage.addBtn);
         getWait();
-        sendText("ILLYRIA", nationalityPage.nationalityName);
+        sendText("ILLYRIA1", nationalityPage.nationalityName);
 
     }
 
