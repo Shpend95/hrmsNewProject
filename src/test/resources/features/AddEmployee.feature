@@ -15,6 +15,7 @@ Feature: Adding employees using different techniques
     And user clicks on save button
     Then employee added successfully
 
+
   @valuesFromFF @smoke
   Scenario: Adding employee from feature file
     When user enter "shpend" ,"kosova" and "pllana"
@@ -46,4 +47,13 @@ Feature: Adding employees using different techniques
    @excelData
    Scenario: Adding employees from excel file
      When user adds multiple employees from excel and validates them
+
+
+  @createLoginDetails @smoke
+  Scenario: Adding employee and creating login details
+    When user enters firstname,middlename,lastname,ID and photo
+    And user clicks on create login details button
+    And user enter username,password and confirms password and enables status
+    And user click on the save button
+    Then the employee is created successfully with login credentials
 

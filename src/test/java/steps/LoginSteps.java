@@ -37,7 +37,7 @@ public class LoginSteps extends CommonMethods {
     public void user_is_successfully_logged_in() throws IOException {
         Assert.assertTrue(dashboardPage.welcomeMessage.isDisplayed());
 
-        Log.endTestCase("first test case is done here");
+
 
 
     }

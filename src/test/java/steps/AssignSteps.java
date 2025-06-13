@@ -18,7 +18,6 @@ public class AssignSteps extends CommonMethods {
 
     @Given("user is logged in and on dashboard page")
     public void user_is_logged_in_and_on_dashboard_page() throws InterruptedException {
-        Log.startTestCase("here we goooo, this is assign steps");
         loginPage.usernameField.sendKeys(ConfigReader.read("userName"));
         loginPage.passwordField.sendKeys(ConfigReader.read("passWord"));
         jsClick(loginPage.loginBtn);
@@ -76,7 +75,7 @@ public class AssignSteps extends CommonMethods {
     public void user_should_see_a_successfully_assingned_message() {
         WebElement message = getWait().until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(),'Successfully Assigned')]")));
         Assert.assertTrue(message.isDisplayed());
-        System.out.println("good ");
+
 
     }
 

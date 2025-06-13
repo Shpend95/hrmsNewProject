@@ -41,6 +41,9 @@ public class AddEmployeePage extends CommonMethods {
     @FindBy(xpath = "//select[@id='status']")
     public WebElement statusBtn;
 
+    @FindBy(xpath = "//*[@name='chkLogin']")
+    public WebElement createLoginDetailsBtn;
+
 
     public AddEmployeePage (){
         PageFactory.initElements(driver,this);

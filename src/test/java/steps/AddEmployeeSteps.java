@@ -3,6 +3,9 @@ package steps;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.hamcrest.core.CombinableMatcher;
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import utils.CommonMethods;
 import utils.ExcelReader;
 import utils.Log;
@@ -112,6 +115,45 @@ public class AddEmployeeSteps extends CommonMethods {
         }
         System.out.println("great");
 
+
+    }
+
+
+    @When("user enters firstname,middlename,lastname,ID and photo")
+    public void user_enters_firstname_middlename_lastname_id_and_photo() {
+        sendText("cometea", addEmployeePage.firstName);
+        sendText("antena", addEmployeePage.middleName);
+        sendText("panda", addEmployeePage.lastName);
+        sendText("00007", addEmployeePage.employeeID);
+        sendText("/Users/shpendpllana/Desktop/NYC.jpg", addEmployeePage.photoGraph);
+    }
+
+    @When("user clicks on create login details button")
+    public void user_clicks_on_create_login_details_button() {
+        jsClick(addEmployeePage.createLoginDetailsBtn);
+    }
+
+    @When("user enter username,password and confirms password and enables status")
+    public void user_enter_username_password_and_confirms_password_and_enables_status() {
+        sendText("aurop95", addEmployeePage.username);
+        sendText("hrm@HRM123", addEmployeePage.passwordUser);
+        sendText("hrm@HRM123", addEmployeePage.confirmPasswordUser);
+
+        if (!addEmployeePage.statusBtn.isEnabled()) {
+            selectFromDropDown("Enabled", addEmployeePage.statusBtn);
+        }
+
+    }
+
+    @When("user click on the save button")
+    public void user_click_on_the_save_button() {
+        jsClick(addEmployeePage.saveBtn);
+    }
+
+    @Then("the employee is created successfully with login credentials")
+    public void the_employee_is_created_successfully_with_login_credentials() {
+        WebElement personalDetails = driver.findElement(By.xpath("//div[@class='personalDetails']"));
+        Assert.assertTrue(personalDetails.isDisplayed());
 
     }
 
