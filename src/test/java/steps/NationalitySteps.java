@@ -22,23 +22,20 @@ public class NationalitySteps extends CommonMethods {
         loginPage.passwordField.sendKeys(ConfigReader.read("passWord"));
         jsClick(loginPage.loginBtn);
         jsClick(dashboardPage.adminBtn);
-
-
     }
 
     @Given("user navigates to nationality creation form")
-    public void user_navigates_to_nationality_creation_form() {
+    public void user_navigates_to_nationality_creation_form() throws InterruptedException {
         jsClick(nationalityPage.nationalityBtn);
-        //jsClick(nationalityPage.addBtn);
+        Thread.sleep(2000);
+        jsClick(nationalityPage.addBtn);
 
     }
 
-
     @When("user enters the name of nationality")
     public void user_enters_the_name_of_nationality() {
-        jsClick(nationalityPage.addBtn);
         getWait();
-        sendText("ILLYRIA", nationalityPage.nationalityName);
+        sendText("UNITED NATIONS OF ALBANIA", nationalityPage.nationalityName);
 
     }
 
@@ -58,12 +55,11 @@ public class NationalitySteps extends CommonMethods {
         Assert.assertTrue(message.getText().contains("Successfully Saved"));
 
 
-
     }
 
     @When("user enters the name of existing nationality")
     public void user_enters_the_name_of_existing_nationality() {
-        sendText("REPUBLIC OF DARDANIA", nationalityPage.nationalityName);
+        sendText("UNITED NATIONS OF ALBANIA", nationalityPage.nationalityName);
     }
 
     @When("user clicks on the save button")
@@ -73,7 +69,8 @@ public class NationalitySteps extends CommonMethods {
 
     @Then("user should see a error message on the screen")
     public void user_should_see_a_error_message_on_the_screen() {
-        getWait().until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id='frmNationality']/fieldset/ol/li[1]/span")));
+        getWait().until(ExpectedConditions.presenceOfElementLocated(By.xpath
+                ("//*[@id='frmNationality']/fieldset/ol/li[1]/span")));
         Assert.assertTrue(nationalityPage.Message.isDisplayed());
     }
 
@@ -86,7 +83,7 @@ public class NationalitySteps extends CommonMethods {
             WebElement nationalityLink = n.findElement(By.xpath(".//td[2]/a"));
             String nationality = nationalityLink.getText();
 
-            if (nationality.equals("americano3")) {
+            if (nationality.equals("UNITED NATIONS OF ALBANIA")) {
                 WebElement checkbox = n.findElement(By.xpath(".//td[1]/input[@type='checkbox']"));
                 jsClick(checkbox);
                 break;
@@ -115,6 +112,16 @@ public class NationalitySteps extends CommonMethods {
         Assert.assertTrue(message.getText().contains("Successfully Deleted"));
 
 
+    }
+
+
+    @When("user leaves the nationality field empty")
+    public void user_leaves_the_nationality_field_empty() {
+        sendText("",nationalityPage.nationalityName);
+    }
+    @Then("a warning should be displayed stating required")
+    public void a_warning_should_be_displayed_stating_required() {
+      Assert.assertTrue(nationalityPage.requiredMessage.isDisplayed());
     }
 
 

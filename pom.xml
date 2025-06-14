@@ -79,7 +79,7 @@
                 <version>3.2.5</version>
                 <configuration>
                     <includes>
-                        <include>**/*SmokeRunner.java</include>
+                        <include>**/*RunnerClass.java</include>
                     </includes>
                 </configuration>
             </plugin>

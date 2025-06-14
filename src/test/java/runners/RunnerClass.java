@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
         dryRun =false,
 
         // we provide the tag name of the scenario we want to execute
-        tags ="@smokee1",
+        tags ="@regression and @smoke",
 
         // here we write pretty keyword to print all the steps in console which we execute , and to generate report and location of report
         plugin = {"pretty","html:target/cucumber.html","json:target/cucumber.json","rerun:target/failed.txt"}

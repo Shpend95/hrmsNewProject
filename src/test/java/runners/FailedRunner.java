@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 
         features = "@target/failed.txt",
         glue = "steps",
-        dryRun = false,
+        dryRun = true,
         tags ="@failed",
         plugin = {"pretty"}
 

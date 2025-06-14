@@ -35,6 +35,9 @@ public class NationalityPage extends CommonMethods {
     @FindBy(xpath = "//input[@id='btnDelete']")
     public WebElement deleteBtn;
 
+    @FindBy(xpath = "//span[contains(text(),'Required')]")
+    public WebElement requiredMessage;
+
 
     public NationalityPage(){
         PageFactory.initElements(driver,this);

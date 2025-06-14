@@ -24,9 +24,9 @@ public class AddEmployeeSteps extends CommonMethods {
 
     @When("user enters firstname and middlename and lastname")
     public void user_enters_firstname_and_middlename_and_lastname() {
-        sendText("Shpend", addEmployeePage.firstName);
-        sendText("N/A", addEmployeePage.middleName);
-        sendText("Pllana", addEmployeePage.lastName);
+        sendText("ICT", addEmployeePage.firstName);
+        sendText("GHOST", addEmployeePage.middleName);
+        sendText("TRADER", addEmployeePage.lastName);
     }
 
     @When("user clicks on save button")

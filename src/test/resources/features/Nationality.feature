@@ -23,6 +23,12 @@ Feature: Modifying nationalities
       And user clicks on Ok button
       Then user should see a successfully deleted message on the screen
 
+      @emptyNationality @regression
+      Scenario: User tries to save an empty nationality
+        When user leaves the nationality field empty
+        And user clicks on save button
+        Then a warning should be displayed stating required
+
 
 
 

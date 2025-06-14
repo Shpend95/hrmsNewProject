@@ -24,8 +24,9 @@ public class AssignSteps extends CommonMethods {
         Thread.sleep(2000);
     }
 
-    @When("user cliks on leave button")
-    public void user_cliks_on_leave_button() {
+
+    @Given("user clicks on leave button")
+    public void user_clicks_on_leave_button() {
         jsClick(assignPage.leaveBtn);
     }
 
@@ -52,10 +53,10 @@ public class AssignSteps extends CommonMethods {
 
         List<WebElement> toDates = driver.findElements(By.xpath("//*[@class='ui-datepicker-calendar']/tbody/tr/td/a"));
         for (WebElement toDate : toDates) {
-           if(toDate.getText().contains("30")){
-               toDate.click();
-               break;
-           }
+            if (toDate.getText().contains("30")) {
+                toDate.click();
+                break;
+            }
         }
         Thread.sleep(2000);
 
@@ -71,12 +72,11 @@ public class AssignSteps extends CommonMethods {
         jsClick(assignPage.okButton);
     }
 
-    @Then("user should see a successfully assingned message")
-    public void user_should_see_a_successfully_assingned_message() {
-        WebElement message = getWait().until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[contains(text(),'Successfully Assigned')]")));
+    @Then("user should see a successfully assigned message")
+    public void user_should_see_a_successfully_assigned_message() {
+        WebElement message = getWait().until(ExpectedConditions.presenceOfElementLocated(By.xpath
+                ("//*[contains(text(),'Successfully Assigned')]")));
         Assert.assertTrue(message.isDisplayed());
-
-
     }
 
 }

@@ -9,47 +9,47 @@ Feature: Adding employees using different techniques
     When user clicks on Add Employee option
 
 
-  @addemployee
+  @addemployee @regression
   Scenario: Adding an employee in HRMS system
     When user enters firstname and middlename and lastname
     And user clicks on save button
     Then employee added successfully
 
 
-  @valuesFromFF
+  @valuesFromFF @regression
   Scenario: Adding employee from feature file
-    When user enter "shpend" ,"kosova" and "pllana"
+    When user enter "GHOST" ,"INSIDE" and "MACHINE/ICT"
     And user clicks on save button
     Then employee added successfully
 
-  @DataDrivenTesting
+  @DataDrivenTesting @regression
   Scenario Outline: Adding employees using data driven testing
     When user enters "<firstname>" and "<middlename>" and "<lastname>"
     And user clicks on save button
     Then employee added successfully
     Examples:
       | firstname | middlename | lastname |
-      | Mike      | Tyson      | Junior   |
-      | Sam       | Tiko         | JR       |
-      | Matt      | LS         | Sr       |
-      | Paul      | PP         | Sr       |
-      | Lionel    | MS         | BS       |
+      | Eric      | Adams      | Junior   |
+      | Lexi      | Michael    | JR       |
+      | Matt      | Ramirez    | Sr       |
+      | Paul      | Nune       | Sr       |
+      | Lionel    | Messi      | BS       |
 
-   @DataTableHead
-   Scenario: Adding multiple employees using data table
-     When user enters firstname, middlename and lastname from data table and verifies it
-     |firstname | middlename | lastname|
-     |Alex      | MS         | Xeni    |
-     |Alexa     | SM         | Marun   |
-     |Sabora    | MJ         | Lorad   |
-     |Fabio     | LR         | Ricos   |
+  @DataTableHead @regression
+  Scenario: Adding multiple employees using data table
+    When user enters firstname, middlename and lastname from data table and verifies it
+      | firstname | middlename | lastname |
+      | Sara      | Alfredo    | Xeni     |
+      | Alexa     | SM         | Marun    |
+      | Tia       | Myself     | Lorad    |
+      | Mia       | Lori       | Ricos    |
 
-   @excelData
-   Scenario: Adding employees from excel file
-     When user adds multiple employees from excel and validates them
+  @excelData @regression
+  Scenario: Adding employees from excel file
+    When user adds multiple employees from excel and validates them
 
 
-  @createLoginDetails
+  @createLoginDetails @regression
   Scenario: Adding employee and creating login details
     When user enters firstname,middlename,lastname,ID and photo
     And user clicks on create login details button
