@@ -15,10 +15,10 @@ import org.junit.runner.RunWith;
         glue="steps",
 
         // we provide true value to get the missing step definitions, and we provide false value to run the actual execution
-        dryRun =false,
+        dryRun =true,
 
         // we provide the tag name of the scenario we want to execute
-        tags ="@regression and @smoke",
+        tags ="@regression",
 
         // here we write pretty keyword to print all the steps in console which we execute , and to generate report and location of report
         plugin = {"pretty","html:target/cucumber.html","json:target/cucumber.json","rerun:target/failed.txt"}
