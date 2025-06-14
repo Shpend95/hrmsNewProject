@@ -37,7 +37,7 @@ public class AssignSteps extends CommonMethods {
 
     @When("user enters the name of employee,leave reason,dates and comments")
     public void user_enters_the_name_of_employee_leave_reason_dates_and_comments() throws InterruptedException {
-        sendText("shpend kosova pllana", assignPage.employeeName);
+        sendText("SHPEND SYNTAX KOSOVA", assignPage.employeeName);
         selectFromDropDown(assignPage.leaveType, "Personal Time");
         jsClick(assignPage.fromDate);
         Thread.sleep(2000);
@@ -60,7 +60,7 @@ public class AssignSteps extends CommonMethods {
         }
         Thread.sleep(2000);
 
-        sendText("i will be back", assignPage.enterComment);
+        sendText("I need to rest", assignPage.enterComment);
 
 
     }

@@ -18,7 +18,7 @@ Feature: Adding employees using different techniques
 
   @valuesFromFF @regression
   Scenario: Adding employee from feature file
-    When user enter "GHOST" ,"INSIDE" and "MACHINE/ICT"
+    When user enter "GHOST" ,"TRADER" and "MACHINE/ICT"
     And user clicks on save button
     Then employee added successfully
 
@@ -30,10 +30,10 @@ Feature: Adding employees using different techniques
     Examples:
       | firstname | middlename | lastname |
       | Eric      | Adams      | Junior   |
-      | Lexi      | Michael    | JR       |
-      | Matt      | Ramirez    | Sr       |
+      | DAVID     | Michael    | JR       |
+      | Manual    | Ramirez    | Sr       |
       | Paul      | Nune       | Sr       |
-      | Lionel    | Messi      | BS       |
+      | Cristiano | Messi      | BS       |
 
   @DataTableHead @regression
   Scenario: Adding multiple employees using data table
