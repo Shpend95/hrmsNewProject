@@ -35,6 +35,12 @@ public class AssignPage extends CommonMethods {
     @FindBy(xpath = "//*[@id='confirmOkButton']")
     public WebElement okButton;
 
+    @FindBy(xpath = "//select[@class='leave_duration_dropdown valid']")
+    public WebElement leaveDuration;
+
+    @FindBy(xpath = "//select[@class='leave_duration_ampm valid']/option")
+    public WebElement leaveDurationTime;
+
 
     public AssignPage() {
         PageFactory.initElements(driver, this);

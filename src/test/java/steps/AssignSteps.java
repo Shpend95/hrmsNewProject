@@ -37,13 +37,13 @@ public class AssignSteps extends CommonMethods {
 
     @When("user enters the name of employee,leave reason,dates and comments")
     public void user_enters_the_name_of_employee_leave_reason_dates_and_comments() throws InterruptedException {
-        sendText("SHPEND SYNTAX KOSOVA", assignPage.employeeName);
-        selectFromDropDown(assignPage.leaveType, "Personal Time");
+        sendText("John Franklin Doe", assignPage.employeeName);
+        selectFromDropDown(assignPage.leaveType, "Sick Leave.");
         jsClick(assignPage.fromDate);
         Thread.sleep(2000);
         List<WebElement> dates = driver.findElements(By.xpath("//*[@class='ui-datepicker-calendar']/tbody/tr/td/a"));
         for (WebElement date : dates) {
-            if (date.getText().contains("24")) {
+            if (date.getText().contains("16")) {
                 date.click();
                 break;
             }
@@ -53,12 +53,16 @@ public class AssignSteps extends CommonMethods {
 
         List<WebElement> toDates = driver.findElements(By.xpath("//*[@class='ui-datepicker-calendar']/tbody/tr/td/a"));
         for (WebElement toDate : toDates) {
-            if (toDate.getText().contains("30")) {
+            if (toDate.getText().contains("16")) {
                 toDate.click();
                 break;
             }
         }
         Thread.sleep(2000);
+
+
+        selectFromDropDown("half_day", assignPage.leaveDuration);
+        selectFromDropDown("PM", assignPage.leaveDurationTime);
 
         sendText("I need to rest", assignPage.enterComment);
 

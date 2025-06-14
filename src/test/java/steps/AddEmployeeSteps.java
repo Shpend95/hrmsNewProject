@@ -6,6 +6,7 @@ import org.hamcrest.core.CombinableMatcher;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import utils.CommonMethods;
 import utils.ExcelReader;
 import utils.Log;
@@ -121,10 +122,10 @@ public class AddEmployeeSteps extends CommonMethods {
 
     @When("user enters firstname,middlename,lastname,ID and photo")
     public void user_enters_firstname_middlename_lastname_id_and_photo() {
-        sendText("ANTON", addEmployeePage.firstName);
-        sendText("CETA", addEmployeePage.middleName);
-        sendText("panda", addEmployeePage.lastName);
-        sendText("00007", addEmployeePage.employeeID);
+        sendText("ANTONI", addEmployeePage.firstName);
+        sendText("CETA1", addEmployeePage.middleName);
+        sendText("panda1", addEmployeePage.lastName);
+        sendText("000017", addEmployeePage.employeeID);
         sendText("/Users/shpendpllana/Desktop/NYC.jpg", addEmployeePage.photoGraph);
     }
 
@@ -135,9 +136,9 @@ public class AddEmployeeSteps extends CommonMethods {
 
     @When("user enter username,password and confirms password and enables status")
     public void user_enter_username_password_and_confirms_password_and_enables_status() {
-        sendText("mike88", addEmployeePage.username);
-        sendText("hrm@HRM123", addEmployeePage.passwordUser);
-        sendText("hrm@HRM123", addEmployeePage.confirmPasswordUser);
+        sendText("mike881", addEmployeePage.username);
+        sendText("hrm@HRM1231", addEmployeePage.passwordUser);
+        sendText("hrm@HRM1231", addEmployeePage.confirmPasswordUser);
 
         if (!addEmployeePage.statusBtn.isEnabled()) {
             selectFromDropDown("Enabled", addEmployeePage.statusBtn);
@@ -152,7 +153,8 @@ public class AddEmployeeSteps extends CommonMethods {
 
     @Then("the employee is created successfully with login credentials")
     public void the_employee_is_created_successfully_with_login_credentials() {
-        WebElement personalDetails = driver.findElement(By.xpath("//div[@class='personalDetails']"));
+        WebElement personalDetails = getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath
+                ("//div[@class='personalDetails']")));
         Assert.assertTrue(personalDetails.isDisplayed());
 
     }

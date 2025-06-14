@@ -105,7 +105,7 @@ public class NationalitySteps extends CommonMethods {
 
     @Then("user should see a successfully deleted message on the screen")
     public void user_should_see_a_successfully_deleted_message_on_the_screen() throws InterruptedException {
-        Thread.sleep(2000);
+        Thread.sleep(3000);
         WebElement message = getWait().until(ExpectedConditions.presenceOfElementLocated(
                 By.xpath("//*[contains(text(),'Successfully Deleted')]")));
 
