@@ -4,7 +4,7 @@ Feature: Modifying nationalities
     Given user is logged in and on Admin Page
     When user navigates to nationality creation form
 
-  @addNationality @smoke
+  @addNationality @regression
   Scenario: Adding a new nationality and verify success message
     When user enters the name of nationality
     And user clicks on save button after entering the nationality

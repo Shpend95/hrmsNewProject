@@ -3,7 +3,7 @@ Feature: Adding employees using different techniques
   Background:
    #Given user is navigated to HRMS application   # this is called and executed in Hooks as pre condition
     When user enters valid username and password
-    And user cicks on login button
+    And user clicks on login button
     Then user is successfully logged in
     When user click on PIM option
     When user clicks on Add Employee option
@@ -16,7 +16,7 @@ Feature: Adding employees using different techniques
     Then employee added successfully
 
 
-  @valuesFromFF @smoke
+  @valuesFromFF
   Scenario: Adding employee from feature file
     When user enter "shpend" ,"kosova" and "pllana"
     And user clicks on save button
@@ -49,7 +49,7 @@ Feature: Adding employees using different techniques
      When user adds multiple employees from excel and validates them
 
 
-  @createLoginDetails @smoke
+  @createLoginDetails
   Scenario: Adding employee and creating login details
     When user enters firstname,middlename,lastname,ID and photo
     And user clicks on create login details button
