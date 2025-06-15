@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.Map;
 
 public class AddEmployeeSteps extends CommonMethods {
+    public static String UserName;
 
 
     @When("user clicks on Add Employee option")
@@ -25,9 +26,9 @@ public class AddEmployeeSteps extends CommonMethods {
 
     @When("user enters firstname and middlename and lastname")
     public void user_enters_firstname_and_middlename_and_lastname() {
-        sendText("ICT1", addEmployeePage.firstName);
+        sendText("RICHY", addEmployeePage.firstName);
         sendText("GHOST", addEmployeePage.middleName);
-        sendText("TRADER", addEmployeePage.lastName);
+        sendText("GOLD", addEmployeePage.lastName);
     }
 
     @When("user clicks on save button")
@@ -122,10 +123,10 @@ public class AddEmployeeSteps extends CommonMethods {
 
     @When("user enters firstname,middlename,lastname,ID and photo")
     public void user_enters_firstname_middlename_lastname_id_and_photo() {
-        sendText("ANTONIO", addEmployeePage.firstName);
-        sendText("CETA1", addEmployeePage.middleName);
+        sendText("CHARLES", addEmployeePage.firstName);
+        sendText("OLIVERAA", addEmployeePage.middleName);
         sendText("panda1", addEmployeePage.lastName);
-        sendText("0000E17", addEmployeePage.employeeID);
+        sendText("AAAAA9OO7", addEmployeePage.employeeID);
         sendText("/Users/shpendpllana/Desktop/NYC.jpg", addEmployeePage.photoGraph);
     }
 
@@ -136,9 +137,10 @@ public class AddEmployeeSteps extends CommonMethods {
 
     @When("user enter username,password and confirms password and enables status")
     public void user_enter_username_password_and_confirms_password_and_enables_status() {
-        sendText("mikelors", addEmployeePage.username);
+        sendText("tuckerCHARLES900", addEmployeePage.username);
         sendText("hrm@HRM1231", addEmployeePage.passwordUser);
         sendText("hrm@HRM1231", addEmployeePage.confirmPasswordUser);
+        UserName = addEmployeePage.username.getText();
 
         if (!addEmployeePage.statusBtn.isEnabled()) {
             selectFromDropDown("Enabled", addEmployeePage.statusBtn);
@@ -148,15 +150,18 @@ public class AddEmployeeSteps extends CommonMethods {
 
     @When("user click on the save button")
     public void user_click_on_the_save_button() {
-
-        getJSExecutor().executeScript("arguments[0].scrollIntoView(true);", addEmployeePage.saveBtn);
+        addEmployeePage.saveBtn.click();
+        //getJSExecutor().executeScript("arguments[0].scrollIntoView(true);", addEmployeePage.saveBtn);
     }
 
     @Then("the employee is created successfully with login credentials")
     public void the_employee_is_created_successfully_with_login_credentials() {
-        WebElement personalDetails = getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath
-                ("//div[@id='profile-pic']")));
-        Assert.assertTrue(personalDetails.isDisplayed());
+
+
+        WebElement ActualUserName = driver.findElement(By.xpath("//*[@id='personal_txtEmpFirstName']"));
+        String actualUserName = ActualUserName.getText();
+
+        Assert.assertEquals(UserName, actualUserName);
 
     }
 

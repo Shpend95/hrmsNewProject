@@ -15,6 +15,9 @@ import java.util.List;
 
 public class NationalitySteps extends CommonMethods {
 
+    public static String nationName = "KOSOVOKINGDOM";
+    public static String existingNation = "GREEK";
+
 
     @Given("user is logged in and on Admin Page")
     public void user_is_logged_in_and_on_admin_page() {
@@ -27,15 +30,15 @@ public class NationalitySteps extends CommonMethods {
     @Given("user navigates to nationality creation form")
     public void user_navigates_to_nationality_creation_form() throws InterruptedException {
         jsClick(nationalityPage.nationalityBtn);
-        Thread.sleep(2000);
-        jsClick(nationalityPage.addBtn);
+
 
     }
 
     @When("user enters the name of nationality")
-    public void user_enters_the_name_of_nationality() {
-        getWait();
-        sendText("UNITED NATIONS OF ALBANIA", nationalityPage.nationalityName);
+    public void user_enters_the_name_of_nationality() throws InterruptedException {
+        Thread.sleep(2000);
+        jsClick(nationalityPage.addBtn);
+        sendText(nationName, nationalityPage.nationalityName);
 
     }
 
@@ -47,10 +50,8 @@ public class NationalitySteps extends CommonMethods {
 
     @Then("user should see a successfully saved message on the screen")
     public void user_should_see_a_successfully_saved_message_on_the_screen() throws InterruptedException {
-        Thread.sleep(2000);
-        WebElement message = getWait().until(ExpectedConditions.presenceOfElementLocated(
+        WebElement message = getWait().until(ExpectedConditions.visibilityOfElementLocated(
                 By.xpath("//*[contains(text(),'Successfully Saved')]")));
-
 
         Assert.assertTrue(message.getText().contains("Successfully Saved"));
 
@@ -58,8 +59,10 @@ public class NationalitySteps extends CommonMethods {
     }
 
     @When("user enters the name of existing nationality")
-    public void user_enters_the_name_of_existing_nationality() {
-        sendText("UNITED NATIONS OF ALBANIA", nationalityPage.nationalityName);
+    public void user_enters_the_name_of_existing_nationality() throws InterruptedException {
+        Thread.sleep(2000);
+        jsClick(nationalityPage.addBtn);
+        sendText(nationName, nationalityPage.nationalityName);
     }
 
     @When("user clicks on the save button")
@@ -83,9 +86,9 @@ public class NationalitySteps extends CommonMethods {
             WebElement nationalityLink = n.findElement(By.xpath(".//td[2]/a"));
             String nationality = nationalityLink.getText();
 
-            if (nationality.equals("UNITED NATIONS OF ALBANIA")) {
+            if (nationality.equals(existingNation)) {
                 WebElement checkbox = n.findElement(By.xpath(".//td[1]/input[@type='checkbox']"));
-                jsClick(checkbox);
+                checkbox.click();
                 break;
             }
         }
@@ -94,7 +97,7 @@ public class NationalitySteps extends CommonMethods {
 
     @When("user clicks on delete button")
     public void user_clicks_on_delete_button() {
-        jsClick(nationalityPage.deleteBtn);
+        nationalityPage.deleteBtn.click();
     }
 
     @When("user clicks on Ok button")
@@ -105,8 +108,7 @@ public class NationalitySteps extends CommonMethods {
 
     @Then("user should see a successfully deleted message on the screen")
     public void user_should_see_a_successfully_deleted_message_on_the_screen() throws InterruptedException {
-        Thread.sleep(3000);
-        WebElement message = getWait().until(ExpectedConditions.presenceOfElementLocated(
+        WebElement message = getWait().until(ExpectedConditions.visibilityOfElementLocated(
                 By.xpath("//*[contains(text(),'Successfully Deleted')]")));
 
         Assert.assertTrue(message.getText().contains("Successfully Deleted"));
@@ -117,11 +119,13 @@ public class NationalitySteps extends CommonMethods {
 
     @When("user leaves the nationality field empty")
     public void user_leaves_the_nationality_field_empty() {
-        sendText("",nationalityPage.nationalityName);
+        jsClick(nationalityPage.addBtn);
+        sendText("", nationalityPage.nationalityName);
     }
+
     @Then("a warning should be displayed stating required")
     public void a_warning_should_be_displayed_stating_required() {
-      Assert.assertTrue(nationalityPage.requiredMessage.isDisplayed());
+        Assert.assertTrue(nationalityPage.requiredMessage.isDisplayed());
     }
 
 

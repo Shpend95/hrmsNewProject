@@ -8,13 +8,13 @@ Feature: Employee search related scenarios
     When user click on PIM option
 
 
-  @regression
+  @regression2
   Scenario: Search employee by id
     When user enter valid employee id
     And user clicks on search button
     Then user is able to see the employee information
 
-  @regression
+  @regression2
   Scenario: Search employee by name
     When user enter valid employee name
     And user clicks on search button
