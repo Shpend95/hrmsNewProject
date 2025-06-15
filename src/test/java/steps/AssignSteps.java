@@ -14,8 +14,6 @@ import utils.Log;
 import java.util.List;
 
 public class AssignSteps extends CommonMethods {
-
-
     @Given("user is logged in and on dashboard page")
     public void user_is_logged_in_and_on_dashboard_page() throws InterruptedException {
         loginPage.usernameField.sendKeys(ConfigReader.read("userName"));
@@ -23,7 +21,6 @@ public class AssignSteps extends CommonMethods {
         jsClick(loginPage.loginBtn);
         Thread.sleep(2000);
     }
-
 
     @Given("user clicks on leave button")
     public void user_clicks_on_leave_button() {
@@ -37,7 +34,7 @@ public class AssignSteps extends CommonMethods {
 
     @When("user enters the name of employee,leave reason,dates and comments")
     public void user_enters_the_name_of_employee_leave_reason_dates_and_comments() throws InterruptedException {
-        sendText("John Franklin Doe", assignPage.employeeName);
+        sendText("Alexander Howe", assignPage.employeeName);
         selectFromDropDown(assignPage.leaveType, "Sick Leave.");
         jsClick(assignPage.fromDate);
         Thread.sleep(2000);
@@ -62,25 +59,32 @@ public class AssignSteps extends CommonMethods {
 
 
         selectFromDropDown("half_day", assignPage.leaveDuration);
-        selectFromDropDown("PM", assignPage.leaveDurationTime);
+        selectFromDropDown(assignPage.PMorAm, "Afternoon");
 
-        sendText("I need to rest", assignPage.enterComment);
+        sendText("I need to rest, AND maybe nap", assignPage.enterComment);
 
 
     }
 
     @When("user clicks on assign button")
     public void user_clicks_on_assign_button() throws InterruptedException {
-        jsClick(assignPage.assignBtn);
-        Thread.sleep(2000);
-        jsClick(assignPage.okButton);
+        assignPage.assignBtn.click();
+        Thread.sleep(1000);
+
+        getJSExecutor().executeScript("arguments[0].scrollIntoView(true);",assignPage.okButton);
+
+       // getWait().until(ExpectedConditions.elementToBeClickable(assignPage.okButton)).click();
     }
 
     @Then("user should see a successfully assigned message")
-    public void user_should_see_a_successfully_assigned_message() {
-        WebElement message = getWait().until(ExpectedConditions.presenceOfElementLocated(By.xpath
-                ("//*[contains(text(),'Successfully Assigned')]")));
+    public void user_should_see_a_successfully_assigned_message() throws InterruptedException {
+        WebElement message = getWait().until(ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("//*[contains(text(),'Successfully Assigned')]")));
         Assert.assertTrue(message.isDisplayed());
+
+
     }
 
 }
+
+

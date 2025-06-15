@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import utils.CommonMethods;
 import utils.Log;
 
-public class EmployeeSearchSteps extends CommonMethods{
+public class EmployeeSearchSteps extends CommonMethods {
 
     @Then("user click on PIM option")
     public void user_click_on_pim_option() {
@@ -28,7 +28,8 @@ public class EmployeeSearchSteps extends CommonMethods{
 
     @Then("user is able to see the employee information")
     public void user_is_able_to_see_the_employee_information() {
-        WebElement listOfEmp = driver.findElement(By.xpath("//div[@id='tableWrapper']/table/tbody"));;
+        WebElement listOfEmp = driver.findElement(By.xpath("//div[@id='tableWrapper']/table/tbody"));
+        ;
         Assert.assertTrue(listOfEmp.getText().contains("GHOST TRADER"));
 
 
@@ -36,9 +37,8 @@ public class EmployeeSearchSteps extends CommonMethods{
 
     @When("user enter valid employee name")
     public void user_enter_valid_employee_name() throws InterruptedException {
-        Thread.sleep(3000);
-        getWait().until(ExpectedConditions.visibilityOfElementLocated(By.id("empsearch_employee_name_empName")));
-        sendText("GHOST TRADER", employeeSearchPage.empNameSearchField);
+        getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='empsearch[employee_name][empName]']")));
+        sendJSExecutorText("arguments[0].value='GHOST TRADER';", employeeSearchPage.empNameSearchField);
 
     }
 

@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -32,14 +33,17 @@ public class AssignPage extends CommonMethods {
     @FindBy(xpath = "//*[@id='assignBtn']")
     public WebElement assignBtn;
 
-    @FindBy(xpath = "//*[@id='confirmOkButton']")
+    @FindBy(id="confirmOkButton")
     public WebElement okButton;
 
-    @FindBy(xpath = "//select[@class='leave_duration_dropdown valid']")
+    @FindBy(id = "assignleave_duration_duration")
     public WebElement leaveDuration;
 
-    @FindBy(xpath = "//select[@class='leave_duration_ampm valid']/option")
-    public WebElement leaveDurationTime;
+   @FindBy(id = "assignleave_duration_ampm")
+   public WebElement PMorAm;
+
+
+
 
 
     public AssignPage() {

@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
         dryRun =false,
 
         // we provide the tag name of the scenario we want to execute
-        tags = "@regression or @smoke",
+        tags = "@newAssign1 ",
 
 
         // here we write pretty keyword to print all the steps in console which we execute , and to generate report and location of report

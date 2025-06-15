@@ -14,7 +14,7 @@ public class EmployeeSearchPage extends CommonMethods {
     @FindBy(xpath = "//*[@id='empsearch_id']")
     public WebElement idField;
 
-    @FindBy(id = "empsearch_employee_name_empName")
+    @FindBy(xpath = "//input[@name='empsearch[employee_name][empName]']")
     public WebElement empNameSearchField;
 
     @FindBy(id = "searchBtn")

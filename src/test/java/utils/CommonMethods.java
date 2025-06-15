@@ -114,6 +114,12 @@ public class CommonMethods extends PageInitializer {
         return js;
     }
 
+    public static JavascriptExecutor sendJSExecutorText(String script,WebElement element){
+        JavascriptExecutor js=(JavascriptExecutor) driver;
+        js.executeScript(script,element);
+        return js;
+    }
+
     public static void jsClick(WebElement element) {
         getJSExecutor().executeScript("arguments[0].click();", element);
     }

@@ -5,7 +5,7 @@ Feature: Modifying leaves
     And user clicks on leave button
 
 
-    @newAssign @regression
+    @newAssign1 @regression
     Scenario:Assigning for leave
       When user clicks on assign leave button
       And user enters the name of employee,leave reason,dates and comments
