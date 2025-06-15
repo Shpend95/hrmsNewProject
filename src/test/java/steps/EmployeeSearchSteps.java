@@ -37,8 +37,10 @@ public class EmployeeSearchSteps extends CommonMethods {
 
     @When("user enter valid employee name")
     public void user_enter_valid_employee_name() throws InterruptedException {
-        getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='empsearch[employee_name][empName]']")));
-        sendJSExecutorText("arguments[0].value='GHOST TRADER';", employeeSearchPage.empNameSearchField);
+        Thread.sleep(3000);
+        employeeSearchPage.empNameSearchField.clear();
+        sendJSExecutorText("arguments[0].value='David Andria Steve';", employeeSearchPage.empNameSearchField);
+        sendText("40817048",employeeSearchPage.idField);
 
     }
 

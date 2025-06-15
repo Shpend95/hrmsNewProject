@@ -25,7 +25,7 @@ public class AddEmployeeSteps extends CommonMethods {
 
     @When("user enters firstname and middlename and lastname")
     public void user_enters_firstname_and_middlename_and_lastname() {
-        sendText("ICT", addEmployeePage.firstName);
+        sendText("ICT1", addEmployeePage.firstName);
         sendText("GHOST", addEmployeePage.middleName);
         sendText("TRADER", addEmployeePage.lastName);
     }
@@ -122,10 +122,10 @@ public class AddEmployeeSteps extends CommonMethods {
 
     @When("user enters firstname,middlename,lastname,ID and photo")
     public void user_enters_firstname_middlename_lastname_id_and_photo() {
-        sendText("ANTONI", addEmployeePage.firstName);
+        sendText("ANTONIO", addEmployeePage.firstName);
         sendText("CETA1", addEmployeePage.middleName);
         sendText("panda1", addEmployeePage.lastName);
-        sendText("000017", addEmployeePage.employeeID);
+        sendText("0000E17", addEmployeePage.employeeID);
         sendText("/Users/shpendpllana/Desktop/NYC.jpg", addEmployeePage.photoGraph);
     }
 
@@ -136,7 +136,7 @@ public class AddEmployeeSteps extends CommonMethods {
 
     @When("user enter username,password and confirms password and enables status")
     public void user_enter_username_password_and_confirms_password_and_enables_status() {
-        sendText("mike881", addEmployeePage.username);
+        sendText("mikelors", addEmployeePage.username);
         sendText("hrm@HRM1231", addEmployeePage.passwordUser);
         sendText("hrm@HRM1231", addEmployeePage.confirmPasswordUser);
 
@@ -148,13 +148,14 @@ public class AddEmployeeSteps extends CommonMethods {
 
     @When("user click on the save button")
     public void user_click_on_the_save_button() {
-        jsClick(addEmployeePage.saveBtn);
+
+        getJSExecutor().executeScript("arguments[0].scrollIntoView(true);", addEmployeePage.saveBtn);
     }
 
     @Then("the employee is created successfully with login credentials")
     public void the_employee_is_created_successfully_with_login_credentials() {
         WebElement personalDetails = getWait().until(ExpectedConditions.visibilityOfElementLocated(By.xpath
-                ("//div[@class='personalDetails']")));
+                ("//div[@id='profile-pic']")));
         Assert.assertTrue(personalDetails.isDisplayed());
 
     }
