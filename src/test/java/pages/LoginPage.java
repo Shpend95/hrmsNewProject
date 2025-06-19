@@ -5,7 +5,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utils.CommonMethods;
 
-import static utils.CommonMethods.driver;
+
 
 public class LoginPage extends CommonMethods {
 

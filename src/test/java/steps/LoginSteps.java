@@ -4,33 +4,33 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
-import org.w3c.dom.DOMConfiguration;
 import utils.CommonMethods;
 import utils.ConfigReader;
-import utils.Log;
+
 
 import java.io.IOException;
 
+import java.time.Duration;
+
 public class LoginSteps extends CommonMethods {
-
-
     @Given("user is navigated to HRMS application")
-    public void user_is_navigated_to_hrms_application() {
+    public void user_is_navigated_to_hrms_application() throws IOException, InterruptedException {
         launchBrowser();
-        Log.startTestCase("here is the beggining of test case");
 
     }
 
     @When("user enters valid username and password")
     public void user_enters_valid_username_and_password() {
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
         loginPage.usernameField.sendKeys(ConfigReader.read("userName"));
         loginPage.passwordField.sendKeys(ConfigReader.read("passWord"));
-
     }
 
     @When("user clicks on login button")
     public void user_clicks_on_login_button() {
         jsClick(loginPage.loginBtn);
+
     }
 
     @Then("user is successfully logged in")
@@ -44,6 +44,7 @@ public class LoginSteps extends CommonMethods {
     public void user_enters_invalid_username_and_invalid_password() {
         sendText("random", loginPage.usernameField);
         sendText("randomly", loginPage.passwordField);
+
     }
 
     @Then("an error message should be displayed saying invalid credentials")

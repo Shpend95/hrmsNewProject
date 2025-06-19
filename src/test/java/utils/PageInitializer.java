@@ -1,5 +1,6 @@
 package utils;
 
+import org.openqa.selenium.support.PageFactory;
 import pages.*;
 import steps.AddEmployeeSteps;
 
@@ -19,9 +20,11 @@ public class PageInitializer {
         employeeSearchPage = new EmployeeSearchPage();
         addEmployeePage = new AddEmployeePage();
         dashboardPage = new DashboardPage();
-        nationalityPage=new NationalityPage();
-        assignPage=new AssignPage();
+        nationalityPage = new NationalityPage();
+        assignPage = new AssignPage();
 
 
     }
 }
+
+

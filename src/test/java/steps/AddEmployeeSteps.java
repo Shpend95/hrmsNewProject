@@ -123,10 +123,10 @@ public class AddEmployeeSteps extends CommonMethods {
 
     @When("user enters firstname,middlename,lastname,ID and photo")
     public void user_enters_firstname_middlename_lastname_id_and_photo() {
-        sendText("CHARLES", addEmployeePage.firstName);
-        sendText("OLIVERAA", addEmployeePage.middleName);
-        sendText("panda1", addEmployeePage.lastName);
-        sendText("AAAAA9OO7", addEmployeePage.employeeID);
+        sendText("JACKSON", addEmployeePage.firstName);
+        sendText("CONOR", addEmployeePage.middleName);
+        sendText("KHABIB", addEmployeePage.lastName);
+        sendText("347654009", addEmployeePage.employeeID);
         sendText("/Users/shpendpllana/Desktop/NYC.jpg", addEmployeePage.photoGraph);
     }
 
@@ -137,7 +137,7 @@ public class AddEmployeeSteps extends CommonMethods {
 
     @When("user enter username,password and confirms password and enables status")
     public void user_enter_username_password_and_confirms_password_and_enables_status() {
-        sendText("tuckerCHARLES900", addEmployeePage.username);
+        sendText("ELONCHARLES900", addEmployeePage.username);
         sendText("hrm@HRM1231", addEmployeePage.passwordUser);
         sendText("hrm@HRM1231", addEmployeePage.confirmPasswordUser);
         UserName = addEmployeePage.username.getText();

@@ -15,8 +15,8 @@ import java.util.List;
 
 public class NationalitySteps extends CommonMethods {
 
-    public static String nationName = "KOSOVOKINGDOM";
-    public static String existingNation = "GREEK";
+    public static String nationName = "KOSOVAALBANIA";
+    public static String existingNation = "Barbadian";
 
 
     @Given("user is logged in and on Admin Page")

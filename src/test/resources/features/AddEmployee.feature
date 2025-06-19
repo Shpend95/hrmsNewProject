@@ -18,7 +18,7 @@ Feature: Adding employees using different techniques
 
   @valuesFromFF @regression
   Scenario: Adding employee from feature file
-    When user enter "GHOST" ,"TRADER" and "MACHINE/ICT"
+    When user enter "DOCKER" ,"SELENIUM" and "GRID"
     And user clicks on save button
     Then employee added successfully
 
