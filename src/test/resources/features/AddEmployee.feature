@@ -9,16 +9,16 @@ Feature: Adding employees using different techniques
     When user clicks on Add Employee option
 
 
-  @addemployee @regression
+  @addemployee @regression @UIDT
   Scenario: Adding an employee in HRMS system
     When user enters firstname and middlename and lastname
     And user clicks on save button
-    Then employee added successfully
+    Then employee is added successfully
 
 
   @valuesFromFF @regression
   Scenario: Adding employee from feature file
-    When user enter "DOCKER" ,"SELENIUM" and "GRID"
+    When user enter "DONALD" ,"J" and "TRUMP"
     And user clicks on save button
     Then employee added successfully
 
@@ -56,4 +56,7 @@ Feature: Adding employees using different techniques
     And user enter username,password and confirms password and enables status
     And user click on the save button
     Then the employee is created successfully with login credentials
+
+
+
 

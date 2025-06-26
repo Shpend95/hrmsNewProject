@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="216d41a6-aba5-42fe-845c-f604bbef6fe9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/utils/DataBaseUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screenshots/passed/Valid admin login 2025-06-19-10-36-35.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/AddEmployeePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/AddEmployeePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/ParallelCrossBrowserRunner.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/RegressionRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/RegressionRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/SmokeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/SmokeRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/AddEmployeeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/AddEmployeeSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/CommonMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Constants.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AddEmployee.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AddEmployee.feature" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dockerfile" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Shpend95&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Shpend95/hrmsNewProject.git&quot;,
+    &quot;accountId&quot;: &quot;3800c38e-058e-4564-9a1f-c4bc3049e9f2&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/steps/AddEmployeeSteps.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/steps/DataBaseExamples.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/utils/CommonMethods.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/java/utils/DataBaseUtils.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/test/resources/config/config.properties" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2y0L31PiTgIOrxl5agNKtBVIfsg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.DataBaseExamples.executor": "Run",
+    "Application.DataBaseUtils.executor": "Run",
+    "Application.DataBaseUtils2.executor": "Run",
+    "Application.test.executor": "Run",
+    "Cucumber Java.Feature: Login.executor": "Run",
+    "Cucumber Java.Scenario: Adding employee from feature file.executor": "Run",
+    "Cucumber Java.Scenario: Search employee by id.executor": "Run",
+    "Cucumber Java.Scenario: Search employee by name.executor": "Run",
+    "Cucumber Java.Scenario: Valid admin login.executor": "Run",
+    "Docker.Dockerfile.executor": "Run",
+    "Docker.docker-compose.yml.chrome: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.edge: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml.selenium-hub: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "JAR Application.newProject-1.0-SNAPSHOT.jar.executor": "Run",
+    "JUnit.ChromeRunner.executor": "Run",
+    "JUnit.EdgeRunner.executor": "Run",
+    "JUnit.FailedRunner.executor": "Run",
+    "JUnit.ParallelCrossBrowserRunner.executor": "Run",
+    "JUnit.RegressionRunner.executor": "Run",
+    "JUnit.RunnerClass.executor": "Run",
+    "JUnit.SmokeRunner.executor": "Run",
+    "Maven.newProject [clean].executor": "Run",
+    "Maven.newProject [compile].executor": "Run",
+    "Maven.newProject [deploy].executor": "Run",
+    "Maven.newProject [install].executor": "Run",
+    "Maven.newProject [package].executor": "Run",
+    "Maven.newProject [site].executor": "Run",
+    "Maven.newProject [test].executor": "Run",
+    "Maven.newProject [validate].executor": "Run",
+    "Maven.newProject [verify].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG./Users/shpendpllana/IdeaProjects/newProject/qodana.yaml.executor": "Run",
+    "TestNG./Users/shpendpllana/IdeaProjects/newProject/src/test/java/steps/testng.xml.executor": "Run",
+    "TestNG./Users/shpendpllana/IdeaProjects/newProject/testng.xml.executor": "Run",
+    "TestNG.CommonMethods.launchBrowser.executor": "Run",
+    "TestNG.EdgeRunner.executor": "Run",
+    "TestNG.GridTestNGBDDRunner.executor": "Run",
+    "TestNG.Hooks.executor": "Run",
+    "TestNG.RunnerClass (1).executor": "Run",
+    "TestNG.RunnerClass.executor": "Run",
+    "TestNG.SeleniumGridRunner.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/shpendpllana/IdeaProjects/newProject/src/screenshots/passed",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="QodanaReportsService">
+    <option name="descriptions">
+      <ReportDescription localRun="true" path="/private/var/folders/26/h_sbp_ld1kddtnprv72yqgq00000gn/T/qodana_output/qodana.sarif.json" reportGuid="826a39e0-3e42-4337-a1e6-7c3c56b74beb" reportId="newProject/qodana/2025-06-19" />
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/screenshots/passed" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/test/resources/testData" />
+      <recent name="$PROJECT_DIR$/src/test/resources/TestData" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/steps" />
+      <recent name="$PROJECT_DIR$/src/test/resources" />
+      <recent name="$PROJECT_DIR$/target" />
+      <recent name="$PROJECT_DIR$/src/Logs" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="utils" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SmokeRunner">
+    <configuration name="DataBaseExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="steps.DataBaseExamples" />
+      <module name="newProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="steps.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DataBaseUtils2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utils.DataBaseUtils2" />
+      <module name="newProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Adding employee from feature file" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/AddEmployee.feature" />
+      <option name="GLUE" value="steps" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="newProject" />
+      <option name="NAME_FILTER" value="^Adding employee from feature file$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Adding employee from feature file$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Adding employee from feature file" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SmokeRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="newProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="runners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="runners" />
+      <option name="MAIN_CLASS_NAME" value="runners.SmokeRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.chrome: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="chrome" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.DataBaseExamples" />
+      <item itemvalue="Application.DataBaseUtils2" />
+      <item itemvalue="Cucumber Java.Scenario: Adding employee from feature file" />
+      <item itemvalue="Docker.docker-compose.yml.chrome: Compose Deployment" />
+      <item itemvalue="JUnit.SmokeRunner" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SmokeRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Adding employee from feature file" />
+        <item itemvalue="Application.DataBaseExamples" />
+        <item itemvalue="Application.DataBaseUtils2" />
+        <item itemvalue="Docker.docker-compose.yml.chrome: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="216d41a6-aba5-42fe-845c-f604bbef6fe9" name="Changes" comment="" />
+      <created>1748966343820</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748966343820</updated>
+      <workItem from="1750869457621" duration="350000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

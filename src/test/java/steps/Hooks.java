@@ -15,11 +15,9 @@ import java.net.MalformedURLException;
 
 public class Hooks extends CommonMethods {
 
-
     @Before
-    public void setUp() throws IOException {
-       launchBrowser();
-
+    public void start() throws Exception {
+        openBrowserAndLaunchApplication();
     }
 
     @After
@@ -32,7 +30,9 @@ public class Hooks extends CommonMethods {
             pic = takeScreenshot("passed/" + scenario.getName());
         }
         scenario.attach(pic, "image/png", scenario.getName());
-        closeBrowser();
+        quitDriver();
+
+
     }
 }
 

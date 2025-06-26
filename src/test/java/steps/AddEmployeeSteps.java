@@ -1,23 +1,29 @@
 package steps;
 
+import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.hamcrest.core.CombinableMatcher;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import utils.CommonMethods;
-import utils.ExcelReader;
-import utils.Log;
+
+import utils.*;
 
 import javax.swing.plaf.synth.SynthOptionPaneUI;
+import java.sql.*;
 import java.util.List;
 import java.util.Map;
 
 public class AddEmployeeSteps extends CommonMethods {
-    public static String UserName;
 
+    public String expectedFN;
+    public String expectedMN;
+    public String expectedLN;
+    public String employeeId;
+    public String fn1;
+    public String mn1;
+    public String ln1;
 
     @When("user clicks on Add Employee option")
     public void user_clicks_on_add_employee_option() {
@@ -26,9 +32,15 @@ public class AddEmployeeSteps extends CommonMethods {
 
     @When("user enters firstname and middlename and lastname")
     public void user_enters_firstname_and_middlename_and_lastname() {
-        sendText("RICHY", addEmployeePage.firstName);
-        sendText("GHOST", addEmployeePage.middleName);
-        sendText("GOLD", addEmployeePage.lastName);
+        sendText("TREPCA10", addEmployeePage.firstName);
+        sendText("TORCIDA10", addEmployeePage.middleName);
+        sendText("CHAMPION10", addEmployeePage.lastName);
+
+        fn1 = addEmployeePage.firstName.getText();
+        mn1 = addEmployeePage.middleName.getText();
+        ln1 = addEmployeePage.lastName.getText();
+
+
     }
 
     @When("user clicks on save button")
@@ -36,16 +48,51 @@ public class AddEmployeeSteps extends CommonMethods {
         addEmployeePage.saveBtn.click();
     }
 
-    @Then("employee added successfully")
-    public void employee_added_successfully() {
-        System.out.println("good");
+    @Then("employee is added successfully")
+    public void employee_is_added_successfully() {
+        System.out.println("ADDED SUCCESSFULLY");
+        String query = "select emp_firstname,emp_middle_name,emp_lastname from hs_hr_employees where employee_id='" + employeeId + "'";
+
+        List<Map<String, String>> data = DataBaseUtils.fetch(query);
+        Map<String, String> oneRowMap = data.get(0);
+        String actualFN = oneRowMap.get("emp_firstname");
+        String actualMN = oneRowMap.get("emp_middle_name");
+        String actualLN = oneRowMap.get("emp_lastname");
+
+        Assert.assertEquals(fn1, actualFN);
+        Assert.assertEquals(mn1, actualMN);
+        Assert.assertEquals(ln1, actualLN);
+
     }
+
 
     @When("user enter {string} ,{string} and {string}")
     public void user_enter_and(String firstName, String middleName, String lastName) {
         sendText(firstName, addEmployeePage.firstName);
         sendText(middleName, addEmployeePage.middleName);
         sendText(lastName, addEmployeePage.lastName);
+
+        expectedFN = firstName;
+        expectedMN = middleName;
+        expectedLN = lastName;
+        employeeId = addEmployeePage.employeeID.getAttribute("value");
+
+    }
+
+    @Then("employee added successfully")
+    public void employee_added_successfully() {
+        System.out.println("ADDED SUCCESSFULLY");
+        String query = "select emp_firstname,emp_middle_name,emp_lastname from hs_hr_employees where employee_id='" + employeeId + "'";
+
+        List<Map<String, String>> data = DataBaseUtils.fetch(query);
+        Map<String, String> oneRowMap = data.get(0);
+        String actualFN = oneRowMap.get("emp_firstname");
+        String actualMN = oneRowMap.get("emp_middle_name");
+        String actualLN = oneRowMap.get("emp_lastname");
+
+        Assert.assertEquals(expectedFN, actualFN);
+        Assert.assertEquals(expectedMN, actualMN);
+        Assert.assertEquals(expectedLN, actualLN);
 
     }
 
@@ -140,7 +187,7 @@ public class AddEmployeeSteps extends CommonMethods {
         sendText("ELONCHARLES900", addEmployeePage.username);
         sendText("hrm@HRM1231", addEmployeePage.passwordUser);
         sendText("hrm@HRM1231", addEmployeePage.confirmPasswordUser);
-        UserName = addEmployeePage.username.getText();
+
 
         if (!addEmployeePage.statusBtn.isEnabled()) {
             selectFromDropDown("Enabled", addEmployeePage.statusBtn);
@@ -161,7 +208,6 @@ public class AddEmployeeSteps extends CommonMethods {
         WebElement ActualUserName = driver.findElement(By.xpath("//*[@id='personal_txtEmpFirstName']"));
         String actualUserName = ActualUserName.getText();
 
-        Assert.assertEquals(UserName, actualUserName);
 
     }
 

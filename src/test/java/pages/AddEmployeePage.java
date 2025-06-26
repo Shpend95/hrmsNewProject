@@ -45,6 +45,8 @@ public class AddEmployeePage extends CommonMethods {
     public WebElement createLoginDetailsBtn;
 
 
+
+
     public AddEmployeePage (){
         PageFactory.initElements(driver,this);
     }
