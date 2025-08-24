@@ -34,7 +34,7 @@ public class AssignSteps extends CommonMethods {
 
     @When("user enters the name of employee,leave reason,dates and comments")
     public void user_enters_the_name_of_employee_leave_reason_dates_and_comments() throws InterruptedException {
-        sendText("Tom Logan Leoni", assignPage.employeeName);
+        sendText("DONALD J TRUMP", assignPage.employeeName);
         selectFromDropDown(assignPage.leaveType, "Sick Leave.");
         jsClick(assignPage.fromDate);
         Thread.sleep(2000);
@@ -73,7 +73,7 @@ public class AssignSteps extends CommonMethods {
 
         getJSExecutor().executeScript("arguments[0].scrollIntoView(true);",assignPage.okButton);
 
-       // getWait().until(ExpectedConditions.elementToBeClickable(assignPage.okButton)).click();
+
     }
 
     @Then("user should see a successfully assigned message")

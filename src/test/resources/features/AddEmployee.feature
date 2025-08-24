@@ -2,14 +2,12 @@ Feature: Adding employees using different techniques
 
   Background:
    #Given user is navigated to HRMS application   # this is called and executed in Hooks as pre condition
-    When user enters valid username and password
-    And user clicks on login button
-    Then user is successfully logged in
-    When user click on PIM option
-    When user clicks on Add Employee option
+    When user is logged in successfully
+    And user clicks on PIM option
+    And user clicks on the Add Employee option
 
 
-  @addemployee @regression @UIDT
+  @addemployee @regression
   Scenario: Adding an employee in HRMS system
     When user enters firstname and middlename and lastname
     And user clicks on save button
@@ -18,7 +16,7 @@ Feature: Adding employees using different techniques
 
   @valuesFromFF @regression
   Scenario: Adding employee from feature file
-    When user enter "DONALD" ,"J" and "TRUMP"
+    When user enter "Selenium" ,"API" and "SQL"
     And user clicks on save button
     Then employee added successfully
 
@@ -29,20 +27,20 @@ Feature: Adding employees using different techniques
     Then employee added successfully
     Examples:
       | firstname | middlename | lastname |
-      | Eric      | Adams      | Junior   |
-      | DAVID     | Michael    | JR       |
-      | Manual    | Ramirez    | Sr       |
-      | Paul      | Nune       | Sr       |
-      | Cristiano | Messi      | BS       |
+      | Shpend      | N/A      | Pllana   |
+      | POST  | Singer      | Malone       |
+      | Syntax   | School     | Technologies       |
+      | Chazz   | Actor        | Paliminteri       |
+      | Khamzat | UFC       | Chimaev       |
 
   @DataTableHead @regression
   Scenario: Adding multiple employees using data table
     When user enters firstname, middlename and lastname from data table and verifies it
       | firstname | middlename | lastname |
-      | Sara      | Alfredo    | Xeni     |
-      | Alexa     | SM         | Marun    |
-      | Tia       | Myself     | Lorad    |
-      | Mia       | Lori       | Ricos    |
+      | Aurora      | Aole    | Light     |
+      | Alex     | Fighter         | Pereira    |
+      | Fedor      | Beast     | Emelianenko    |
+      | Lorik       | Soccer       | Cana    |
 
   @excelData @regression
   Scenario: Adding employees from excel file

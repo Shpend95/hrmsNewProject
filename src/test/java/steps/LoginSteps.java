@@ -3,9 +3,12 @@ package steps;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.restassured.RestAssured;
 import org.junit.Assert;
 import utils.CommonMethods;
 import utils.ConfigReader;
+import utils.Constants;
+import utils.DataBaseUtils;
 
 
 import java.io.IOException;
@@ -30,6 +33,7 @@ public class LoginSteps extends CommonMethods {
     @When("user clicks on login button")
     public void user_clicks_on_login_button() {
         jsClick(loginPage.loginBtn);
+        click(loginPage.loginBtn);
 
     }
 

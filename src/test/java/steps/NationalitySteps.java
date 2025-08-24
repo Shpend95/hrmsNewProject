@@ -72,9 +72,9 @@ public class NationalitySteps extends CommonMethods {
 
     @Then("user should see a error message on the screen")
     public void user_should_see_a_error_message_on_the_screen() {
-        getWait().until(ExpectedConditions.presenceOfElementLocated(By.xpath
+        WebElement message = getWait().until(ExpectedConditions.presenceOfElementLocated(By.xpath
                 ("//*[@id='frmNationality']/fieldset/ol/li[1]/span")));
-        Assert.assertTrue(nationalityPage.Message.isDisplayed());
+        Assert.assertTrue(message.getText().contains("Already exists"));
     }
 
 

@@ -6,10 +6,10 @@ import org.openqa.selenium.support.PageFactory;
 import utils.CommonMethods;
 
 public class DashboardPage extends CommonMethods {
-    @FindBy(id="menu_pim_viewPimModule")
+    @FindBy(xpath = "//a[@id='menu_pim_viewPimModule']")
     public WebElement pimOption;
 
-    @FindBy(id="menu_pim_viewEmployeeList")
+    @FindBy(xpath = "//a[@id='menu_pim_addEmployee']")
     public WebElement employeeListOption;
 
     @FindBy(id="menu_pim_addEmployee")

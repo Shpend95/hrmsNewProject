@@ -1,7 +1,10 @@
 
 package utils;
 
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
 import org.apache.commons.io.FileUtils;
+import org.asynchttpclient.Request;
 import org.openqa.selenium.*;
 
 import org.openqa.selenium.WebDriver;
@@ -22,6 +25,10 @@ import java.util.Date;
 
 
 public class CommonMethods extends PageInitializer {
+
+    public static Response response;
+    public static RequestSpecification prepareRequest;
+
     public static WebDriver driver;
     public static void openBrowserAndLaunchApplication() throws IOException {
 
