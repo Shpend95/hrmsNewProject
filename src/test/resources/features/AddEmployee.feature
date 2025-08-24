@@ -1,3 +1,4 @@
+@addEmployeeOnly
 Feature: Adding employees using different techniques
 
   Background:
