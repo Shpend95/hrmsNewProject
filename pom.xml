@@ -141,8 +141,7 @@
                 <version>3.2.1</version>
                 <configuration>
                     <includes>
-                        <include>**/*ParallelCrossBrowserRunner.java</include>
-                        <include>**/*SmokeRunner.java</include>
+                        <include>**/*RegressionRunner.java</include>
                     </includes>
                     <parallel>classes</parallel>
                     <useUnlimitedThreads>true</useUnlimitedThreads>
