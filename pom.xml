@@ -132,7 +132,6 @@
                 </executions>
             </plugin>
 
-            <!-- Cucumber Reporting -->
             <plugin>
                 <groupId>net.masterthought</groupId>
                 <artifactId>maven-cucumber-reporting</artifactId>
@@ -143,16 +142,18 @@
                         <phase>verify</phase>
                         <goals><goal>generate</goal></goals>
                         <configuration>
-                            <projectName>newProject</projectName>
+                            <projectName>HRMS UI</projectName>
                             <outputDirectory>${project.build.directory}/cucumber-html-reports</outputDirectory>
                             <jsonFiles>
-                                <param>${project.build.directory}/cucumber.json</param>
+                                <param>${project.build.directory}/cucumber-report/cucumber.json</param>
                             </jsonFiles>
-                            <buildNumber>${BUILD_NUMBER}</buildNumber>
+                            <buildNumber>${env.BUILD_NUMBER}</buildNumber>
+                            <checkBuildResult>false</checkBuildResult>  <!-- don’t fail report on failing tests -->
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
+
 
 
 
