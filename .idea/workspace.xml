@@ -5,53 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="216d41a6-aba5-42fe-845c-f604bbef6fe9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/failed/Adding an employee in HRMS system 2025-06-25-14-52-42.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/failed/Adding an employee in HRMS system 2025-06-25-14-59-57.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/failed/Adding an employee in HRMS system 2025-06-25-15-05-42.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/failed/Adding an employee in HRMS system 2025-06-25-15-21-43.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/failed/Invalid login credentials 2025-06-19-12-53-02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/failed/Invalid login credentials 2025-06-19-12-58-56.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/failed/Invalid login credentials 2025-06-19-13-00-29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/failed/Password missing 2025-06-19-12-59-24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/failed/Password missing 2025-06-19-13-00-53.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/failed/Username missing 2025-06-19-12-59-47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/failed/Username missing 2025-06-19-13-01-18.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/failed/Valid admin login 2025-06-19-12-52-36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/failed/Valid admin login 2025-06-19-12-58-29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/failed/Valid admin login 2025-06-19-13-00-03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/failed/Valid admin login 2025-06-19-13-02-54.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/failed/Verify the created employee in database 2025-06-19-20-50-29.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/passed/Adding an employee in HRMS system 2025-06-19-20-50-13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/passed/Adding an employee in HRMS system 2025-06-19-23-54-10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/passed/Adding employee from feature file 2025-06-25-14-48-36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/passed/Invalid login credentials 2025-06-19-13-04-42.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/passed/Invalid login credentials 2025-06-19-13-06-36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/passed/Invalid login credentials 2025-06-19-13-08-43.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/passed/Valid admin login 2025-06-19-13-04-26.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/passed/Valid admin login 2025-06-19-13-06-23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/passed/Valid admin login 2025-06-19-13-08-28.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/passed/Valid admin login 2025-06-19-13-34-10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/passed/Valid admin login 2025-06-19-13-41-47.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/passed/Valid admin login 2025-06-19-13-43-33.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/passed/Valid admin login 2025-06-19-13-44-32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/passed/Valid admin login 2025-06-19-13-49-34.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/passed/Valid admin login 2025-06-19-13-50-52.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/screenshots/passed/Valid admin login 2025-06-19-23-54-19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DashboardPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DashboardPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/RegressionRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/RegressionRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/SmokeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/SmokeRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/AddEmployeeSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/AddEmployeeSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/AssignSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/AssignSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/LoginSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/steps/NationalitySteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/NationalitySteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/CommonMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Constants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/Constants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/config/config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/config/config.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AddEmployee.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AddEmployee.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AssignLeave.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AssignLeave.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testData/Batch19TestData1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testData/Batch19TestData1.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Nationality.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Nationality.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,6 +92,7 @@
     "Maven.newProject [verify].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
     "RunOnceActivity.git.unshallow": "true",
     "TestNG./Users/shpendpllana/IdeaProjects/newProject/qodana.yaml.executor": "Run",
     "TestNG./Users/shpendpllana/IdeaProjects/newProject/src/test/java/steps/testng.xml.executor": "Run",
@@ -157,11 +113,6 @@
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="QodanaReportsService">
-    <option name="descriptions">
-      <ReportDescription localRun="true" path="/private/var/folders/26/h_sbp_ld1kddtnprv72yqgq00000gn/T/qodana_output/qodana.sarif.json" reportGuid="826a39e0-3e42-4337-a1e6-7c3c56b74beb" reportId="newProject/qodana/2025-06-19" />
-    </option>
-  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/screenshots/passed" />
@@ -179,26 +130,13 @@
       <recent name="utils" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RegressionRunner">
+  <component name="RunManager" selected="Docker.docker-compose.yml.selenium-hub: Compose Deployment">
     <configuration name="DataBaseExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="steps.DataBaseExamples" />
       <module name="newProject" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="steps.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DataBaseUtils2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="utils.DataBaseUtils2" />
-      <module name="newProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -262,20 +200,33 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yml.selenium-hub: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="selenium-hub" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Application.DataBaseExamples" />
-      <item itemvalue="Application.DataBaseUtils2" />
       <item itemvalue="Cucumber Java.Scenario: " />
+      <item itemvalue="Docker.docker-compose.yml.selenium-hub: Compose Deployment" />
       <item itemvalue="JUnit.RegressionRunner" />
       <item itemvalue="JUnit.SmokeRunner" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.selenium-hub: Compose Deployment" />
         <item itemvalue="JUnit.RegressionRunner" />
         <item itemvalue="JUnit.SmokeRunner" />
         <item itemvalue="Cucumber Java.Scenario: " />
         <item itemvalue="Application.DataBaseExamples" />
-        <item itemvalue="Application.DataBaseUtils2" />
       </list>
     </recent_temporary>
   </component>

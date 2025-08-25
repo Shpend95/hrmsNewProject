@@ -1,3 +1,4 @@
+@loginOnly
 Feature: Login related scenarios
 
   @smoke
