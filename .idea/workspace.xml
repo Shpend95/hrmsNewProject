@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="216d41a6-aba5-42fe-845c-f604bbef6fe9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Login.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Nationality.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Nationality.feature" afterDir="false" />
-    </list>
+    <list default="true" id="216d41a6-aba5-42fe-845c-f604bbef6fe9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,64 +52,64 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.DataBaseExamples.executor": "Run",
-    "Application.DataBaseUtils.executor": "Run",
-    "Application.DataBaseUtils2.executor": "Run",
-    "Application.test.executor": "Run",
-    "Cucumber Java.Feature: Login.executor": "Run",
-    "Cucumber Java.Scenario: .executor": "Run",
-    "Cucumber Java.Scenario: Adding employee from feature file.executor": "Run",
-    "Cucumber Java.Scenario: Search employee by id.executor": "Run",
-    "Cucumber Java.Scenario: Search employee by name.executor": "Run",
-    "Cucumber Java.Scenario: Valid admin login.executor": "Run",
-    "Docker.Dockerfile.executor": "Run",
-    "Docker.docker-compose.yml.chrome: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.edge: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.selenium-hub: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "JAR Application.newProject-1.0-SNAPSHOT.jar.executor": "Run",
-    "JUnit.ChromeRunner.executor": "Run",
-    "JUnit.EdgeRunner.executor": "Run",
-    "JUnit.FailedRunner.executor": "Run",
-    "JUnit.ParallelCrossBrowserRunner.executor": "Run",
-    "JUnit.RegressionRunner.executor": "Run",
-    "JUnit.RunnerClass.executor": "Run",
-    "JUnit.SmokeRunner.executor": "Run",
-    "Maven.newProject [clean].executor": "Run",
-    "Maven.newProject [compile].executor": "Run",
-    "Maven.newProject [deploy].executor": "Run",
-    "Maven.newProject [install].executor": "Run",
-    "Maven.newProject [package].executor": "Run",
-    "Maven.newProject [site].executor": "Run",
-    "Maven.newProject [test].executor": "Run",
-    "Maven.newProject [validate].executor": "Run",
-    "Maven.newProject [verify].executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "TestNG./Users/shpendpllana/IdeaProjects/newProject/qodana.yaml.executor": "Run",
-    "TestNG./Users/shpendpllana/IdeaProjects/newProject/src/test/java/steps/testng.xml.executor": "Run",
-    "TestNG./Users/shpendpllana/IdeaProjects/newProject/testng.xml.executor": "Run",
-    "TestNG.CommonMethods.launchBrowser.executor": "Run",
-    "TestNG.EdgeRunner.executor": "Run",
-    "TestNG.GridTestNGBDDRunner.executor": "Run",
-    "TestNG.Hooks.executor": "Run",
-    "TestNG.RunnerClass (1).executor": "Run",
-    "TestNG.RunnerClass.executor": "Run",
-    "TestNG.SeleniumGridRunner.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/shpendpllana/IdeaProjects/newProject/src/screenshots/passed",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.DataBaseExamples.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DataBaseUtils.executor&quot;: &quot;Run&quot;,
+    &quot;Application.DataBaseUtils2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.test.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Feature: Login.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: .executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Adding employee from feature file.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Search employee by id.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Search employee by name.executor&quot;: &quot;Run&quot;,
+    &quot;Cucumber Java.Scenario: Valid admin login.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.Dockerfile.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.chrome: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.edge: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.selenium-hub: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;JAR Application.newProject-1.0-SNAPSHOT.jar.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ChromeRunner.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.EdgeRunner.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.FailedRunner.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ParallelCrossBrowserRunner.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RegressionRunner.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RunnerClass.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.SmokeRunner.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.newProject [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.newProject [compile].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.newProject [deploy].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.newProject [install].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.newProject [package].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.newProject [site].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.newProject [test].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.newProject [validate].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.newProject [verify].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;TestNG./Users/shpendpllana/IdeaProjects/newProject/qodana.yaml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG./Users/shpendpllana/IdeaProjects/newProject/src/test/java/steps/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG./Users/shpendpllana/IdeaProjects/newProject/testng.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CommonMethods.launchBrowser.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.EdgeRunner.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.GridTestNGBDDRunner.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Hooks.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RunnerClass (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RunnerClass.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SeleniumGridRunner.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/shpendpllana/IdeaProjects/newProject/src/screenshots/passed&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/screenshots/passed" />
@@ -130,7 +127,7 @@
       <recent name="utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.selenium-hub: Compose Deployment">
+  <component name="RunManager" selected="JUnit.SmokeRunner">
     <configuration name="DataBaseExamples" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="steps.DataBaseExamples" />
       <module name="newProject" />
@@ -222,9 +219,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SmokeRunner" />
         <item itemvalue="Docker.docker-compose.yml.selenium-hub: Compose Deployment" />
         <item itemvalue="JUnit.RegressionRunner" />
-        <item itemvalue="JUnit.SmokeRunner" />
         <item itemvalue="Cucumber Java.Scenario: " />
         <item itemvalue="Application.DataBaseExamples" />
       </list>
