@@ -153,6 +153,26 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>net.masterthought</groupId>
+                <artifactId>maven-cucumber-reporting</artifactId>
+                <version>5.8.0</version>
+                <executions>
+                    <execution>
+                        <id>cucumber-html-reports</id>
+                        <phase>verify</phase>
+                        <goals><goal>generate</goal></goals>
+                        <configuration>
+                            <projectName>newProject</projectName>
+                            <jsonFiles>
+                                <param>target/cucumber.json</param>
+                            </jsonFiles>
+                            <buildNumber>${BUILD_NUMBER}</buildNumber>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+
 
 
             <!-- Compiler Plugin -->
