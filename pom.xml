@@ -21,12 +21,6 @@
             <version>4.11.0</version>
         </dependency>
 
-        <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>2.11.0</version>
-        </dependency>
-
 
 
         <!-- Cucumber -->
@@ -41,11 +35,7 @@
             <version>7.14.0</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-testng</artifactId>
-            <version>7.15.0</version>
-        </dependency>
+
 
         <!-- JUnit -->
         <dependency>
@@ -54,13 +44,6 @@
             <version>4.13.2</version>
         </dependency>
 
-        <!-- TestNG -->
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>7.3.0</version>
-            <scope>test</scope>
-        </dependency>
 
         <!-- Apache POI -->
         <dependency>
@@ -188,22 +171,21 @@
                 <version>5.6.2</version>
                 <executions>
                     <execution>
-                        <id>generate</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
+                        <id>cucumber-report</id>
+                        <phase>verify</phase>
+                        <goals><goal>generate</goal></goals>
                         <configuration>
                             <projectName>newProject</projectName>
-                            <outputDirectory>${project.build.directory}</outputDirectory>
-                            <inputDirectory>${project.build.directory}</inputDirectory>
+                            <outputDirectory>${project.build.directory}/cucumber-report</outputDirectory>
                             <jsonFiles>
-                                <param>**/*.json</param>
+                                <param>${project.build.directory}/cucumber.json</param>
                             </jsonFiles>
+                            <checkBuildResult>false</checkBuildResult>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
+
 
             <!-- Compiler Plugin -->
             <plugin>
