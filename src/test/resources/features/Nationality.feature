@@ -1,3 +1,4 @@
+@loginOnly
 Feature: Modifying nationalities
 
   Background:

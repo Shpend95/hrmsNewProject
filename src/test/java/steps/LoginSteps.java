@@ -19,6 +19,7 @@ public class LoginSteps extends CommonMethods {
     @Given("user is navigated to HRMS application")
     public void user_is_navigated_to_hrms_application() throws IOException, InterruptedException {
         driver.get("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/dashboard");
+        System.out.println("logged");
 
     }
 
