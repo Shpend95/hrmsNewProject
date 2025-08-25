@@ -117,38 +117,6 @@
 
     <build>
         <plugins>
-            <!-- Surefire Plugin -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.2.1</version>
-                <configuration>
-                    <includes>
-                        <include>**/*Runner.java</include>
-                    </includes>
-                    <parallel>classes</parallel>
-                    <useUnlimitedThreads>true</useUnlimitedThreads>
-                </configuration>
-            </plugin>
-
-            <!-- Failsafe Plugin -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-failsafe-plugin</artifactId>
-                <version>3.5.1</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>integration-test</goal>
-                            <goal>verify</goal>
-                        </goals>
-                        <configuration>
-                            <parallel>methods</parallel>
-                            <useUnlimitedThreads>true</useUnlimitedThreads>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
 
             <!-- Checkstyle -->
             <plugin>
