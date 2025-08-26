@@ -27,13 +27,13 @@ Feature: Login related scenarios
     And user clicks on login button
     Then an error message should be displayed saying Username is required
 
-  @featureFileLogin @smoke
+ # @featureFileLogin @smoke
   Scenario: Valid admin login from feature file
     When user enters "admin" value and "Hum@nhrm123" value
     And user clicks on login button
     Then user is successfully logged in
 
-  @dataDrivenFromFeatureFile @smoke
+ # @dataDrivenFromFeatureFile @smoke
   Scenario Outline:Login multiple times
     When user enters "<username>"  and "<password>"
     And user clicks on login button

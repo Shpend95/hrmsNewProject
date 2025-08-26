@@ -19,8 +19,7 @@ public class LoginSteps extends CommonMethods {
     @Given("user is navigated to HRMS application")
     public void user_is_navigated_to_hrms_application() throws IOException, InterruptedException {
         driver.get("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/dashboard");
-        System.out.println("logged in");
-        System.out.println("good");
+
 
     }
 
@@ -42,6 +41,8 @@ public class LoginSteps extends CommonMethods {
     @Then("user is successfully logged in")
     public void user_is_successfully_logged_in() throws IOException {
         Assert.assertTrue(dashboardPage.welcomeMessage.isDisplayed());
+        System.out.println("You are now logged in");
+
 
     }
 
