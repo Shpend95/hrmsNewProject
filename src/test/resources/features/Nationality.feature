@@ -30,6 +30,24 @@ Feature: Modifying nationalities
         Then a warning should be displayed stating required
 
 
+  @featureFileLogin
+  Scenario: Valid admin login from feature file
+    When user enters "admin" value and "Hum@nhrm123" value
+    And user clicks on login button
+    Then user is successfully logged in
+
+  @dataDrivenFromFeatureFile
+  Scenario Outline:Login multiple times
+    When user enters "<username>"  and "<password>"
+    And user clicks on login button
+    Then user is successfully logged in
+    Examples:
+      | username | password    |
+      | admin    | Hum@nhrm123 |
+      | admin    | Hum@nhrm123 |
+      | admin    | Hum@nhrm123 |
+
+
 
 
 
