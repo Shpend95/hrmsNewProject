@@ -15,7 +15,7 @@ public class LoginPage extends CommonMethods {
     @FindBy(id="txtPassword")
     public WebElement passwordField;
 
-    @FindBy(id="btnLogin")
+    @FindBy(xpath = "//div[@id='divLoginButton']/input[@id='btnLogin']")
     public WebElement loginBtn;
 
     @FindBy(xpath = "//*[@id='spanMessage']")

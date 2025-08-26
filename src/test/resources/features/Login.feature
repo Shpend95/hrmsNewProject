@@ -8,7 +8,6 @@ Feature: Login related scenarios
     And user clicks on login button
     Then user is successfully logged in
 
-
   @smoke
   Scenario: Invalid login credentials
     When user enters invalid username and invalid password

@@ -20,13 +20,11 @@ public class LoginSteps extends CommonMethods {
     public void user_is_navigated_to_hrms_application() throws IOException, InterruptedException {
         driver.get("http://hrm.syntaxtechs.net/humanresources/symfony/web/index.php/dashboard");
 
-
     }
 
     @When("user enters valid username and password")
     public void user_enters_valid_username_and_password() {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
         loginPage.usernameField.sendKeys(ConfigReader.read("userName"));
         loginPage.passwordField.sendKeys(ConfigReader.read("passWord"));
     }
@@ -34,7 +32,7 @@ public class LoginSteps extends CommonMethods {
     @When("user clicks on login button")
     public void user_clicks_on_login_button() {
         jsClick(loginPage.loginBtn);
-        click(loginPage.loginBtn);
+
 
     }
 
