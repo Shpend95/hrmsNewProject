@@ -9,8 +9,11 @@ import org.openqa.selenium.*;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -34,13 +37,16 @@ public class CommonMethods extends PageInitializer {
 
         switch (ConfigReader.read("browser")){
             case "Chrome":
-                driver=new ChromeDriver();
+                ChromeOptions options=new ChromeOptions();
+               // driver=new  ChromeDriver();
                 break;
             case "FireFox":
-                driver=new FirefoxDriver();
+                FirefoxOptions firefoxOptions=new FirefoxOptions();
+                //driver=new FirefoxDriver();
                 break;
             case "edge":
-                driver=new EdgeDriver();
+                EdgeOptions edgeOptions=new EdgeOptions();
+               // driver=new EdgeDriver();
                 break;
             default:
                 throw new RuntimeException("Invalid Browser Name");
