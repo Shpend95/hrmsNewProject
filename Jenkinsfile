@@ -14,10 +14,9 @@ pipeline {
             }
         }
     }
-   post {
-  always {
-    junit 'target/cucumber-reports/*.xml'
-  }
-}
-
+    post {
+     always {
+       junit 'target/cucumber-reports/*.xml'
+     }
+   }
 }

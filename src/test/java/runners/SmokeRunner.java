@@ -12,7 +12,8 @@ import org.junit.runner.RunWith;
         glue = "steps",
         dryRun = false,
         tags ="@loginOnly",
-        plugin = {"pretty", "html:target/cucumber.html", "json:target/cucumber.json", "rerun:target/failed"}
+        plugin = {"pretty", "junit:target/cucumber-reports/Cucumber.xml",
+                "html:target/cucumber.html", "json:target/cucumber.json", "rerun:target/failed"}
 
 
 )
