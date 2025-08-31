@@ -38,6 +38,9 @@ public class CommonMethods extends PageInitializer {
         switch (ConfigReader.read("browser")){
             case "Chrome":
                 ChromeOptions options=new ChromeOptions();
+                options.addArguments("--headless=new", "--no-sandbox", "--disable-dev-shm-usage");
+                options.addArguments("--remote-allow-origins=*");
+                options.addArguments("--user-data-dir=/tmp/chrome-profile-" + System.currentTimeMillis());
                 driver=new  ChromeDriver(options);
                 break;
             case "FireFox":
