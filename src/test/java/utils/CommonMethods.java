@@ -38,15 +38,15 @@ public class CommonMethods extends PageInitializer {
         switch (ConfigReader.read("browser")){
             case "Chrome":
                 ChromeOptions options=new ChromeOptions();
-               // driver=new  ChromeDriver();
+                driver=new  ChromeDriver(options);
                 break;
             case "FireFox":
                 FirefoxOptions firefoxOptions=new FirefoxOptions();
-                //driver=new FirefoxDriver();
+                driver=new FirefoxDriver(firefoxOptions);
                 break;
             case "edge":
                 EdgeOptions edgeOptions=new EdgeOptions();
-               // driver=new EdgeDriver();
+                driver=new EdgeDriver(edgeOptions);
                 break;
             default:
                 throw new RuntimeException("Invalid Browser Name");
