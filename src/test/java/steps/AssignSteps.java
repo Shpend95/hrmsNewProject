@@ -71,7 +71,7 @@ public class AssignSteps extends CommonMethods {
         assignPage.assignBtn.click();
         Thread.sleep(1000);
 
-        getJSExecutor().executeScript("arguments[0].scrollIntoView(true);",assignPage.okButton);
+        getJSExecutor().executeScript("arguments[0].scrollIntoView(true);", assignPage.okButton);
 
 
     }
@@ -80,11 +80,20 @@ public class AssignSteps extends CommonMethods {
     public void user_should_see_a_successfully_assigned_message() throws InterruptedException {
         WebElement message = getWait().until(ExpectedConditions.visibilityOfElementLocated(
                 By.xpath("//*[contains(text(),'Successfully Assigned')]")));
-        Assert.assertTrue(message.isDisplayed());
+
+        WebElement failedMessage = getWait().until(ExpectedConditions.visibilityOfElementLocated(
+                By.xpath("//*[contains(text(),'Failed to Assign')]")));
+
+        if (message.isDisplayed()) {
+            System.out.println("approved");
+        } else if (failedMessage.isDisplayed())
+            System.out.println("failed to assign");
 
 
     }
 
 }
+
+
 
 

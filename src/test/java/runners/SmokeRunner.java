@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = "steps",
         dryRun = false,
-        tags ="@loginOnly",
+        tags ="@newAssign1",
         plugin = {"pretty", "junit:target/cucumber-reports/Cucumber.xml",
                 "html:target/cucumber.html", "json:target/cucumber.json", "rerun:target/failed"}
 
