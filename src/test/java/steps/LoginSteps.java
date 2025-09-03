@@ -40,6 +40,7 @@ public class LoginSteps extends CommonMethods {
     public void user_is_successfully_logged_in() throws IOException {
         Assert.assertTrue(dashboardPage.welcomeMessage.isDisplayed());
         System.out.println("You are now logged in");
+        System.out.println("hahah");
 
 
     }

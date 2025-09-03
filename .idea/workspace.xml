@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="216d41a6-aba5-42fe-845c-f604bbef6fe9" name="Changes" comment="" />
+    <list default="true" id="216d41a6-aba5-42fe-845c-f604bbef6fe9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/RegressionRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/RegressionRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/runners/SmokeRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/SmokeRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/steps/AssignSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/steps/AssignSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/CommonMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utils/CommonMethods.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -220,8 +226,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SmokeRunner" />
-        <item itemvalue="Docker.docker-compose.yml.selenium-hub: Compose Deployment" />
         <item itemvalue="JUnit.RegressionRunner" />
+        <item itemvalue="Docker.docker-compose.yml.selenium-hub: Compose Deployment" />
         <item itemvalue="Cucumber Java.Scenario: " />
         <item itemvalue="Application.DataBaseExamples" />
       </list>
